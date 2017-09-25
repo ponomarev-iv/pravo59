@@ -64,6 +64,11 @@
     &:nth-child(5){
       transition-delay: .5s;
     }
+
+    &.is-active{
+      opacity: .5;
+      cursor: default;
+    }
   }
 }
 
