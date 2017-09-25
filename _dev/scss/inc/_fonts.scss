@@ -1,0 +1,19 @@
+/**
+ * Created by Pompo on 22.09.2017.
+ */
+
+/* cyrillic */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url('../fonts/PT-Sans.woff2') format('woff2');
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url('../fonts/PT-Sans-Bold.woff2') format('woff2');
+}

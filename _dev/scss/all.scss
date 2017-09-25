@@ -1,0 +1,14 @@
+/**
+ * Created by Pompo on 22.09.2017.
+ */
+
+@import "assets/reset";
+@import "assets/media-mixin";
+
+@import "inc/fonts";
+@import "inc/layout";
+@import "inc/header";
+
+h1 {
+  color: red;
+}

@@ -1,0 +1,46 @@
+/**
+ * Created by Pompo on 22.09.2017.
+ */
+
+html, body{
+  font-size: 16px;
+}
+
+body{
+  font-family: 'PT Sans', Arial, sans-serif;
+}
+
+a{
+  outline: none !important;
+}
+
+img{
+  max-width: 100%;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-weight: normal;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+#page-wrap{
+  min-height: 100vh;
+}
+
+//section
+.hero{
+  background-color: #582912;
+}
+
+.service{
+  background-color: #fbf1df;
+}
