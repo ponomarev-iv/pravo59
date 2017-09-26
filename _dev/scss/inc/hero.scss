@@ -1,0 +1,62 @@
+/**
+ * Created by Pompo on 26.09.2017.
+ */
+
+.hero{
+  //background-color: #582912;
+  background: #333 url('../img/hero-bg.jpg') no-repeat scroll transparent 50% 50% / cover;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  color: #fff;
+
+  & .container{
+    flex-grow: 1;
+  }
+
+  &__title{
+    width: 40%;
+    font-weight: 700;
+    font-size: 3.5em;
+    margin-bottom: .5em;
+    text-shadow: 1px 2px 5px rgba(0,0,0,.5);
+  }
+
+  &__list{
+    list-style: none;
+    margin-bottom: 5rem;
+
+    & li{
+      font-size: 1.5em;
+      margin-bottom: .5em;
+      text-shadow: 1px 2px 5px rgba(0,0,0,.5);
+      font-weight: 400;
+
+      &:last-of-type{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__btn{
+
+    & .btn{
+      text-decoration: none;
+      background-color: #fff;
+      color: #333;
+      opacity: .8;
+      display: inline-block;
+      padding: 1em;
+      text-transform: uppercase;
+      border: 2px solid #fff;
+      border-radius: .5em;
+      font-size: 2em;
+      transition: opacity ease-out .33s;
+
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+}

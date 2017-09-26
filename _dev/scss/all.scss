@@ -5,9 +5,11 @@
 @import "assets/reset";
 @import "assets/media-mixin";
 
-@import "inc/fonts";
+//@import "inc/fonts";
 @import "inc/layout";
 @import "inc/header";
+@import "inc/menu";
+@import "inc/hero";
 
 h1 {
   color: red;

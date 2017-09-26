@@ -4,18 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <title>Юридический центр Право</title>
     <link rel="stylesheet" href="css/all.css">
 </head>
 <body>
-<div class="mobile-btn js-menu">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-</div>
 <div class="menu js-mobile-menu">
     <nav class="nav">
         <a href="#" class="is-active">Главная</a>
@@ -25,84 +18,95 @@
     </nav>
 </div>
 
+<!-- START header -->
+<header class="header">
+    <!-- START menuBTN -->
+    <div class="mobile-btn js-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!-- END menuBTN -->
+
+    <div class="container">
+
+        <h1 class="header__txt">
+            <span class="header__txt_accent">Право и&nbsp;Семья</span>
+            юридический центр
+
+        </h1>
+
+        <div class="header__location">
+            <!--TODO: надо будет сделать разметку на shemaorg-->
+            Пермь, Куйбышева, 50, офис 515<br>
+            <a href="#" class="location-link">показать на карте</a>
+        </div>
+
+        <div class="header__phone">
+            <a href="tel:+73422719474">271-94-74</a><br>
+            <a href="tel:+79824460390">8-982-466-03-90</a>
+        </div>
+    </div>
+</header>
+<!-- END header -->
 <div id="page-wrap">
-<!-- START heroSection -->
-<section class="hero">
-    <!-- START header -->
-    <header class="header">
+    <!-- START heroSection -->
+    <section class="hero">
         <div class="container">
-
-            <h1 class="header__txt">
-                Юридический центр<br>
-                <span class="header__txt_accent">&laquo;Право и&nbsp;Семья&raquo;</span>
-            </h1>
-
-            <div class="header__location">
-                <!--TODO: надо будет сделать разметку на shemaorg-->
-                <p class="phone">
-                    Тел.: <a href="tel:+73422719474">271&nbsp;94&nbsp;74</a>
-                    Тел.: <a href="tel:+79824460390">8&nbsp;982&nbsp;466&nbsp;03&nbsp;90</a>
-                </p>
-                <p class="location">Пермь, Куйбышева, 50, офис 515</p>
-                <a href="#" class="location-link">показать на карте</a>
-            </div>
-        </div>
-    </header>
-    <!-- END header -->
-
-    <div class="container">
-        <!-- START heroBlock -->
-        <h2 class="hero__title">
-            5&nbsp;причин обратиться к&nbsp;нам
-        </h2>
-        <ul class="hero__list">
-            <li>Опыт ежедневной работы по&nbsp;семейному праву</li>
-            <li>Оплата услуг в&nbsp;рассрочку</li>
-            <li>Узкая специализация&nbsp;&ndash; Семейные споры</li>
-            <li>Доступная и&nbsp;фиксированная цена</li>
-            <li>Бесплатная юридическая консультация по&nbsp;семейным делам</li>
-        </ul>
-
-        <div class="hero__btn">
-            <a href="#" class="btn js-open-popup">Получить консультацию</a>
-            <a href="#" class="btn btn_accent js-open-popup">Заказать звонок</a>
-        </div>
-        <!-- END heroBlock -->
-    </div>
-</section>
-<!-- END heroSection -->
-
-<!-- START serviceSection -->
-<section class="service">
-    <div class="container">
-        <div class="service__col">
-            <h2 class="section-title">
-                Услуги
+            <!-- START heroBlock -->
+            <h2 class="hero__title">
+                5&nbsp;причин обратиться к&nbsp;нам
             </h2>
-            <div class="service-wrap">
-                <a href="#" class="service__item">Расторжение брака</a>
-                <a href="#" class="service__item">Раздел имущества</a>
-                <a href="#" class="service__item">Споры о&nbsp;детях</a>
-                <a href="#" class="service__item">Взыскание алиментов</a>
-                <a href="#" class="service__item">Установление отцовства</a>
-                <a href="#" class="service__item">Лишение родительских прав</a>
-            </div>
-        </div>
-
-        <!-- START asideStart -->
-        <aside class="service__col service__col_sm">
-            <h3 class="section-title section-title_sec">Полезно знать</h3>
-            <ul class="article__list">
-                <li><a href="#">Статья 1</a></li>
-                <li><a href="#">Статья 2</a></li>
-                <li><a href="#">Статья 3</a></li>
-                <li><a href="#">Статья 4</a></li>
+            <ul class="hero__list">
+                <li>&mdash;&nbsp;опыт ежедневной работы по&nbsp;семейному праву</li>
+                <li>&mdash;&nbsp;оплата услуг в&nbsp;рассрочку</li>
+                <li>&mdash;&nbsp;узкая специализация&nbsp;&ndash; Семейные споры</li>
+                <li>&mdash;&nbsp;доступная и&nbsp;фиксированная цена</li>
+                <li>&mdash;&nbsp;бесплатная юридическая консультация по&nbsp;семейным делам</li>
             </ul>
-        </aside>
-        <!-- END asideStart -->
-    </div>
-</section>
-<!-- END serviceSection -->
+
+            <div class="hero__btn">
+                <a href="#" class="btn js-open-popup">Получить консультацию</a>
+            </div>
+            <!-- END heroBlock -->
+        </div>
+    </section>
+    <!-- END heroSection -->
+
+    <!-- START serviceSection -->
+    <section class="service">
+        <div class="container">
+            <div class="service__col">
+                <h2 class="section-title">
+                    Услуги
+                </h2>
+                <div class="service-wrap">
+                    <a href="#" class="service__item">Расторжение брака</a>
+                    <a href="#" class="service__item">Раздел имущества</a>
+                    <a href="#" class="service__item">Споры о&nbsp;детях</a>
+                    <a href="#" class="service__item">Взыскание алиментов</a>
+                    <a href="#" class="service__item">Установление отцовства</a>
+                    <a href="#" class="service__item">Лишение родительских прав</a>
+                </div>
+            </div>
+
+            <!-- START asideStart -->
+            <aside class="service__col service__col_sm">
+                <h3 class="section-title section-title_sec">Полезно знать</h3>
+                <ul class="article__list">
+                    <li><a href="#">Статья 1</a></li>
+                    <li><a href="#">Статья 2</a></li>
+                    <li><a href="#">Статья 3</a></li>
+                    <li><a href="#">Статья 4</a></li>
+                </ul>
+            </aside>
+            <!-- END asideStart -->
+        </div>
+    </section>
+    <!-- END serviceSection -->
 </div>
 
 <script src="js/jquery-3.2.1.min.js"></script>
