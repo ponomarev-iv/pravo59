@@ -12,6 +12,11 @@
   color: #fff;
   position: relative;
 
+  @include respondTo(mobile){
+    min-height: auto;
+    padding: 240px 0 40px;
+  }
+
   &:before{
     content: '';
     position: absolute;
@@ -35,6 +40,16 @@
     text-shadow: 1px 2px 5px rgba(0,0,0,.5);
     z-index: 10;
     position: relative;
+
+    @include fluid-type(font-size, 320px, 1200px, 24px, 56px);
+
+    @include respondTo(desktop){
+      width: 80%;
+    }
+
+    @include respondTo(mobile){
+      width: 100%;
+    }
   }
 
   &__list{
@@ -43,11 +58,17 @@
     z-index: 10;
     position: relative;
 
+    @include respondTo(mobile){
+      margin-bottom: 2rem;
+    }
+
     & li{
       font-size: 1.5em;
       margin-bottom: .5em;
       text-shadow: 1px 2px 5px rgba(0,0,0,.5);
       font-weight: 400;
+
+      @include fluid-type(font-size, 320px, 1200px, 18px, 24px);
 
       &:last-of-type{
         margin-bottom: 0;
@@ -71,6 +92,8 @@
       border-radius: .5em;
       font-size: 1.5em;
       transition: opacity ease-out .33s;
+
+      @include fluid-type(font-size, 320px, 1200px, 18px, 24px);
 
       &:hover{
         opacity: 1;

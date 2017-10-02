@@ -5,12 +5,12 @@ function mobileMenu(){
     var $mobileBtn = $('.js-menu'),
         $mobileMenu = $('.js-mobile-menu');
 
-    $mobileBtn.click(function(){
+    $mobileBtn.on('click', function(){
         $(this).toggleClass('open');
         $mobileMenu.toggleClass('is-open');
     });
 
-    $('#page-wrap').click(function(){
+    $('#page-wrap').on('click', function(){
         $mobileBtn.removeClass('open');
         $mobileMenu.removeClass('is-open');
     })
@@ -31,6 +31,7 @@ function scrollDown(){
     else return false;
 }
 
+//animation hero banner
 function animateHero(){
     var header = $('.header'),
         heroTitle = $('.hero__title'),
