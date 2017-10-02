@@ -31,7 +31,22 @@ function scrollDown(){
     else return false;
 }
 
+function animateHero(){
+    var header = $('.header'),
+        heroTitle = $('.hero__title'),
+        heroBtn = $('.hero__btn'),
+        heroList = $('.hero__list li'),
+        tl = new TimelineLite();
+
+    tl
+        .from(header, 0.4, {y: -15, autoAlpha: 0, ease:Power1.easeOut})
+        .from(heroTitle, 0.3, {y: -15, autoAlpha: 0, ease:Power1.easeOut})
+        .from(heroList, 0.4, {x: -50, autoAlpha: 0, ease:Power1.easeOut}, '-=0.15')
+        .from(heroBtn, 0.3, {y: 20, autoAlpha: 0, ease:Power1.easeOut}, '-=0.15');
+}
+
 $(document).ready(function(){
     mobileMenu();
     scrollDown();
+    animateHero();
 });
