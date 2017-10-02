@@ -1,0 +1,76 @@
+/**
+ * Created by Pompo on 03.10.2017.
+ */
+.section-title{
+  text-align: center;
+  font-weight: 700;
+  //font-size: 2.5em;
+  margin-bottom: 1em;
+  color: #582912;
+
+  @include fluid-type(font-size, 320px, 1200px, 28px, 40px);
+
+  &_sec{
+    //font-size: 1.5em;
+    text-align: left;
+
+    @include fluid-type(font-size, 320px, 1200px, 20px, 24px);
+  }
+}
+
+p{
+  line-height: 1.35;
+  font-size: 1em;
+  color: #333;
+  font-weight: 400;
+  margin: 0 0 1em;
+
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+
+  & b{
+    font-weight: 700;
+  }
+
+  & a{
+    text-decoration: underline;
+    color: #cb954f;
+  }
+}
+
+.article-list{
+  list-style: none;
+  margin: 1em 0;
+  padding: 0;
+
+  & li{
+    position: relative;
+    padding-left: 1em;
+    line-height: 1.2;
+    padding-bottom: .65em;
+
+    &:before{
+      position: absolute;
+      content: '';
+      border-radius: 50%;
+      width: 5px;
+      height: 5px;
+      background-color: #582912;
+      left: 0;
+      top: 10px;
+    }
+
+    & a{
+      color: #582912;
+      text-decoration: none;
+      font-size: 1.2em;
+      transition: color ease .3s;
+
+      &:hover{
+        color: #cb954f;
+        text-decoration: underline;
+      }
+    }
+  }
+}

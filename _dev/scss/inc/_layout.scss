@@ -8,6 +8,7 @@ html, body{
 
 body{
   font-family: 'PT Sans', Arial, sans-serif;
+  color: #333;
 }
 
 a{
@@ -30,13 +31,12 @@ h1, h2, h3, h4, h5, h6{
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1em;
+
+  @media screen and (max-width: 1400px){
+    max-width: 980px;
+  }
 }
 
 #page-wrap{
   min-height: 100vh;
-}
-
-//section
-.service{
-  background-color: #fbf1df;
 }

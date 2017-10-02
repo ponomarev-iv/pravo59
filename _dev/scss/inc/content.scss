@@ -1,0 +1,64 @@
+/**
+ * Created by Pompo on 03.10.2017.
+ */
+.content{
+  padding: 40px 0;
+  position: relative;
+
+  &:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    background: url('../img/pero.png') no-repeat scroll transparent;
+    background-size: contain;
+    width: 15%;
+    height: 267px;
+
+    @media screen and (max-width: 1180px){
+      width: 20%;
+    }
+
+    @include respondTo(mobile){
+      display: none;
+    }
+  }
+
+  & .container{
+    display: flex;
+    justify-content: space-between;
+
+    @include respondTo(tablet){
+      flex-direction: column;
+    }
+  }
+
+  &__col{
+    width: 65%;
+    position: relative;
+    z-index: 10;
+
+    @include respondTo(tablet){
+      width: 100%;
+      padding-top: 80px;
+    }
+
+    @include respondTo(mobile){
+      padding-top: 0;
+    }
+
+    &_sm{
+      width: 30%;
+
+      @media screen and (max-width: 1180px){
+        padding-top: 100px;
+      }
+
+      @include respondTo(tablet){
+        order: 2;
+        padding-top: 2.5em;
+        width: 100%;
+      }
+    }
+  }
+}

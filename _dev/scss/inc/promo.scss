@@ -1,0 +1,72 @@
+/**
+ * Created by Pompo on 03.10.2017.
+ */
+.promo{
+  padding: 1.5em;
+  //border: 1px solid #582912;
+  //border-radius: .6em;
+  background-color: rgba(#fbf1df,.3);
+  margin: 1em 0;
+  position: relative;
+
+  &:before{
+    content: '';
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    width: 32px;
+    height: 32px;
+    background: url('../img/promo.svg') no-repeat scroll transparent;
+  }
+
+  &__title{
+    color: #582912;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-bottom: .5em;
+  }
+
+  &__subtitle{
+    color: #cb954f;
+    font-size: 1.35em;
+    line-height: 1.2;
+    margin: 0 0 .5em;
+  }
+
+  &__txt{
+    color: #000;
+
+    &_accent{
+      color: #582912;
+      font-weight: 700;
+      font-size: 1.3em;
+      margin: .35em 0;
+      display: inline-block;
+    }
+  }
+
+  &__list{
+    margin: .5em 0 0;
+    list-style: none;
+    padding: 0;
+
+    & li{
+      position: relative;
+      padding-left: .8em;
+      line-height: 1.25;
+      padding-bottom: .5em;
+
+      &:before{
+        position: absolute;
+        content: '';
+        top: 10px;
+        left: 0;
+        border-radius: 50%;
+        background-color: #582912;
+        width: 4px;
+        height: 4px;
+      }
+    }
+  }
+}

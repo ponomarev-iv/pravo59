@@ -5,7 +5,7 @@
   transition: transform ease-out .33s;
   transform: translateX(-100%);
   width: 20%;
-  background-color: rgba(0, 0, 0, .85);
+  background-color: rgba(#582912, .85);
   color: #fff;
   height: calc(100vh - 90px);
   display: flex;
@@ -15,6 +15,29 @@
   z-index: 100;
   top: 90px;
 
+  @media screen and (max-width: 1600px){
+    padding: 30px;
+    width: 30%;
+  }
+
+  @include respondTo(tablet){
+    padding: 1em;
+    width: 40%;
+  }
+
+  @include respondTo(mobile){
+    top: 0;
+    height: 100%;
+    padding-top: 200px;
+  }
+
+  @media screen and (max-width: 640px){
+    width: 50%;
+  }
+
+  @include respondTo(small){
+    width: 80%;
+  }
 
   &.is-open {
     transform: translateX(0);
@@ -27,12 +50,15 @@
   & a{
     color: #fff;
     text-transform: uppercase;
-    padding: 20px;
-    font-size: 20px;
+    //padding: 20px;
+    //font-size: 20px;
     display: block;
     text-decoration: none;
     transform: translateX(-100%);
     transition: transform ease-out .7s;
+
+    @include fluid-type(font-size, 320px, 1200px, 18px, 20px);
+    @include fluid-type(padding, 320px, 1200px, 15px, 20px);
 
     &:nth-child(1){
       transition-delay: .1s;
@@ -71,6 +97,14 @@
   transform: rotate(0deg);
   cursor: pointer;
   z-index: 101;
+
+  @media screen and (max-width: 1180px){
+    left: 1em;
+  }
+
+  @include respondTo(mobile){
+    top: 1.5em;
+  }
 }
 
 .mobile-btn span {
@@ -78,7 +112,7 @@
   position: absolute;
   height: 3px;
   width: 50%;
-  background: #333333;
+  background: #cb954f;
   opacity: 1;
   transform: rotate(0deg);
   transition: .25s ease-in-out;
@@ -149,4 +183,12 @@
   z-index: 101;
   top: 35px;
   left: 2em;
+
+  @media screen and (max-width: 1180px){
+    left: 1em;
+  }
+
+  @include respondTo(mobile){
+    top: 1.5em;
+  }
 }
