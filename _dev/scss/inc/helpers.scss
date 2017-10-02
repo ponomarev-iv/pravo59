@@ -1,0 +1,29 @@
+.scroll-down{
+    position: absolute;
+    bottom: 30px;
+    left: calc(50% - 20px);
+    background: url('../img/arrow-down.svg') no-repeat scroll;
+    width: 40px;
+    height: 30px;
+    display: inline-block;
+    z-index: 10;
+    cursor: pointer;
+    animation-name: arrow-down;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes arrow-down {
+    0% {
+        bottom: 30px;
+    }
+
+    50% {
+        bottom: 10px;
+    }
+
+    100% {
+        bottom: 30px;
+    }
+}
