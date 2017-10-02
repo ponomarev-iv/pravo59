@@ -96,6 +96,8 @@
 
       @include fluid-type(font-size, 320px, 1200px, 18px, 24px);
 
+      @include fluid-type(font-size, 320px, 1200px, 18px, 24px);
+
       &:hover{
         opacity: 1;
       }
