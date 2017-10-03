@@ -35,6 +35,7 @@ function scrollDown(){
 function animateHero(){
     var header = $('.header'),
         heroTitle = $('.hero__title'),
+        heroSubtitle = $('.hero__subtitle'),
         heroBtn = $('.hero__btn'),
         heroList = $('.hero__list li'),
         tl = new TimelineLite();
@@ -42,6 +43,7 @@ function animateHero(){
     tl
         .from(header, .6, {y: -35, autoAlpha: 0, ease:Power1.easeOut})
         .from(heroTitle, 0.4, {y: -15, autoAlpha: 0, ease:Power1.easeOut}, '-=0.15')
+        .from(heroSubtitle, 0.4, {y: -30, autoAlpha: 0, ease:Power1.easeOut}, '-=0.15')
         .from(heroList, 0.4, {x: -50, autoAlpha: 0, ease:Power1.easeOut}, '-=0.15')
         .from(heroBtn, 0.4, {y: 20, autoAlpha: 0, ease:Power1.easeOut}, '-=0.15');
 }

@@ -13,8 +13,8 @@
   position: relative;
 
   @include respondTo(mobile){
-    min-height: auto;
-    padding: 240px 0 40px;
+    min-height: 0;
+    padding: 220px 0 40px;
   }
 
   &:before{
@@ -33,15 +33,27 @@
   }
 
   &__title{
-    width: 40%;
     font-weight: 700;
-    font-size: 3.5em;
+    line-height: 1.25;
     margin-bottom: .5em;
     text-shadow: 1px 2px 5px rgba(0,0,0,.5);
     z-index: 10;
     position: relative;
 
-    @include fluid-type(font-size, 320px, 1200px, 24px, 56px);
+    @include fluid-type(font-size, 320px, 1200px, 24px, 48px);
+  }
+
+  &__subtitle{
+    font-weight: 700;
+    width: 40%;
+    color: #fff;
+    z-index: 10;
+    position: relative;
+    padding-bottom: .35em;
+    text-shadow: 1px 2px 5px rgba(0,0,0,.5);
+    display: inline-block;
+
+    @include fluid-type(font-size, 320px, 1200px, 20px, 32px);
 
     @include respondTo(desktop){
       width: 80%;
