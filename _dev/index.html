@@ -52,7 +52,7 @@
     </div>
 </header>
 <!-- END header -->
-<div id="page-wrap">
+<noindex id="page-wrap">
     <!-- START heroSection -->
     <section class="hero">
         <div class="container">
@@ -203,23 +203,6 @@
         </div>
     </section>
     <!-- END promoSection -->
-    
-    <!-- START videoSection -->
-    <section class="video">
-        <div class="container">
-            <div class="video__item">
-
-                <div onclick="$(this).replaceWith('<iframe width=\'100%\' height=\'100%\' src=\'https://www.youtube.com/embed/LQG4OFDY7yc?autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0\' frameborder=\'0\' allowfullscreen></iframe><br/>');"><img src="img/video-prev-1.jpg" width="100%"/></div>
-            </div>
-            <div class="video__item">
-                <div onclick="$(this).replaceWith('<iframe width=\'100%\' height=\'100%\' src=\'https://www.youtube.com/embed/FRXJ4tb2p0A?autoplay=1&amp;controls=0&amp;showinfo=0\' frameborder=\'0\' allowfullscreen></iframe><br/>');"><img src="img/video-prev-2.jpg" width="100%"/></div>
-            </div>
-            <div class="video__item">
-                <div onclick="$(this).replaceWith('<iframe width=\'100%\' height=\'100%\' src=\'https://www.youtube.com/embed/bbVWx0CdX6Q?autoplay=1&amp;controls=0&amp;showinfo=0\' frameborder=\'0\' allowfullscreen></iframe><br/>');"><img src="img/video-prev-3.jpg" width="100%"/></div>
-            </div>
-        </div>
-    </section>
-    <!-- END videoSection -->
 
     <!-- START contact -->
     <section class="contact">
@@ -228,7 +211,8 @@
 
             <div class="contact__wrap">
                 <div class="contact__map">
-                    Здесь карта
+                    <script type="text/javascript" charset="utf-8" async
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A20baf32ab088af06bd11731ff6836854a162b96b6c414dad8efbb639b42dbc27&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
                 </div>
                 <div class="contact__info">
                     <h4 class="contact__title">Юридический центр &laquo;Право и&nbsp;Семья&raquo;</h4>
@@ -241,7 +225,6 @@
                         </div>
                     </div>
                     <div class="contact__data-row">
-
                         <div class="contact__data-info">
                             Телефон:
                         </div>
@@ -250,14 +233,34 @@
                             <a href="tel:+79824460390">8-982-446-03-90</a>
                         </div>
                     </div>
+                    <div class="contact__data-row">
+                        <a href="#" class="button">Получить консультацию</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- END contact -->
 
-    
-</div>
+    <!-- START footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__col">
+                <p class="copyright">
+                    &copy;&nbsp;2013&ndash;2017 Юридический центр &laquo;Право и&nbsp;Семья&raquo;
+                </p>
+            </div>
+            <div class="footer__col">
+                <a href="#" class="footer__link">Пользовательское соглашение</a>
+                <a href="#" class="footer__link">Политика конфиденциальности</a>
+                <a href="#" class="footer__link">Карта сайта</a>
+            </div>
+        </div>
+    </footer>
+    <!-- END footer -->
+
+
+</noindex>
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/CSSPlugin.min.js"></script>

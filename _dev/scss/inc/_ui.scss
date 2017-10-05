@@ -1,0 +1,26 @@
+/**
+ * Created by Pompo on 05.10.2017.
+ */
+.button{
+  text-decoration: none;
+  background-color: #cb954f;
+  text-align: center;
+  display: block;
+  padding: .8em;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-radius: .8em;
+  max-width: 320px;
+  font-weight: 700;
+  color: #fff;
+  transition: box-shadow ease .3s;
+
+  @include respondTo(small){
+    max-width: none;
+    font-size: 1em;
+  }
+
+  &:hover{
+    box-shadow: 0 4px 8px rgba(0,0,0,.2);
+  }
+}
