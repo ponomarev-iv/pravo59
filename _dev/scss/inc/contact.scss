@@ -4,17 +4,35 @@
 .contact{
   padding: 3em 0;
 
+  @include respondTo(small){
+    padding: 2em 0;
+  }
+
   &__wrap{
     display: flex;
     justify-content: space-between;
+
+    @include respondTo(tablet){
+      flex-direction: column;
+      justify-content: flex-start;
+    }
   }
 
   &__map{
     width: 60%;
+
+    @include respondTo(tablet){
+      width: 100%;
+      order: 2;
+    }
   }
 
   &__info{
     width: 35%;
+
+    @include respondTo(tablet){
+      width: 100%;
+    }
   }
 
   &__title{
@@ -29,6 +47,10 @@
     font-size: 1.25em;
     line-height: 1.3;
 
+    @include respondTo(small){
+      font-size: 1em;
+    }
+
     &:after{
       content: '';
       clear: both;
@@ -38,8 +60,9 @@
 
   &__data-info{
     float: left;
-    width: 20%;
+    width: 25%;
     font-weight: 700;
+    max-width: 80px;
   }
 
   &__data-txt{
@@ -53,5 +76,10 @@
     }
   }
 
+  & .section-title{
 
+    @include respondTo(tablet){
+      text-align: left;
+    }
+  }
 }
