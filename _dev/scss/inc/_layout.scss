@@ -40,3 +40,16 @@ h1, h2, h3, h4, h5, h6{
 #page-wrap{
   min-height: 100vh;
 }
+
+.content-wrap{
+  padding: 120px 0 30px;
+  border-bottom: 1px solid #ccc;
+
+  & .section-title_sec{
+    margin: 1em 0 .3em;
+  }
+
+  @include respondTo(mobile){
+    padding-top: 220px;
+  }
+}

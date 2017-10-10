@@ -13,6 +13,7 @@ var gulp = require('gulp'),
     newer = require('gulp-newer'),
     size = require('gulp-size'),
     browserSync = require("browser-sync"),
+    pug = require('gulp-pug'),
     reload = browserSync.reload;
 
 var path = {
@@ -28,13 +29,15 @@ var path = {
         scss: '_dev/scss/',
         img: '_dev/img/*.*',
         js: '_dev/js/*.js',
-        html: '_dev/*.html'
+        html: '_dev/*.html',
+        pug: '_dev/tmpl/*.pug'
     },
     watch: {
         style: '_dev/scss/**/*.scss',
         img: '_dev/img/*.*',
         js: '_dev/js/*',
-        html: '_dev/*.html'
+        html: '_dev/*.html',
+        pug: '_dev/tmpl/*.pug'
     },
     clean: 'public/'
 };
@@ -84,6 +87,9 @@ gulp.task('html:build', function () {
     gulp.src(path.src.html)
         .pipe(rigger())
         .pipe(gulp.dest(path.build.html));
+    gulp.src(path.src.pug)
+        .pipe(pug())
+        .pipe(gulp.dest(path.build.html));
 });
 
 gulp.task('build', [
@@ -94,7 +100,7 @@ gulp.task('build', [
 ]);
 
 gulp.task('watch', function(){
-    watch([path.watch.html], function(event, cb) {
+    watch([path.watch.html, path.watch.pug], function(event, cb) {
         gulp.start('html:build');
     });
     watch([path.watch.style], function(event, cb) {

@@ -33,23 +33,50 @@ function scrollDown(){
 
 //animation hero banner
 function animateHero(){
-    var header = $('.header'),
-        heroTitle = $('.hero__title'),
-        heroSubtitle = $('.hero__subtitle'),
-        heroBtn = $('.hero__btn'),
-        heroList = $('.hero__list li'),
-        tl = new TimelineLite();
+    if($('.hero__title').length){
+        var header = $('.header'),
+            heroTitle = $('.hero__title'),
+            heroSubtitle = $('.hero__subtitle'),
+            heroBtn = $('.hero__btn'),
+            heroList = $('.hero__list li'),
+            tl = new TimelineLite();
 
-    tl
-        .from(header, .6, {y: -35, autoAlpha: 0, ease:Power1.easeOut})
-        .from(heroTitle, 0.4, {y: -15, autoAlpha: 0, ease:Power1.easeOut}, '-=0.15')
-        .from(heroSubtitle, 0.4, {y: -30, autoAlpha: 0, ease:Power1.easeOut}, '-=0.15')
-        .from(heroList, 0.4, {x: -50, autoAlpha: 0, ease:Power1.easeOut}, '-=0.15')
-        .from(heroBtn, 0.4, {y: 20, autoAlpha: 0, ease:Power1.easeOut}, '-=0.15');
+        tl
+            .from(header, .6, {y: -35, autoAlpha: 0, ease:Power1.easeOut})
+            .from(heroTitle, 0.4, {y: -15, autoAlpha: 0, ease:Power1.easeOut}, '-=0.15')
+            .from(heroSubtitle, 0.4, {y: -30, autoAlpha: 0, ease:Power1.easeOut}, '-=0.15')
+            .from(heroList, 0.4, {x: -50, autoAlpha: 0, ease:Power1.easeOut}, '-=0.15')
+            .from(heroBtn, 0.4, {y: 20, autoAlpha: 0, ease:Power1.easeOut}, '-=0.15');
+    }
+    else return false;
+}
+
+function magnificInit() {
+
+    if($('.js-open-popup').length){
+        $('.js-open-popup').magnificPopup({
+            type: 'inline',
+
+            fixedContentPos: false,
+            fixedBgPos: true,
+
+            overflowY: 'auto',
+
+            closeBtnInside: true,
+            preloader: false,
+
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-zoom-in'
+        });
+    }
+    else return false;
+
 }
 
 $(document).ready(function(){
     mobileMenu();
     scrollDown();
     animateHero();
+    magnificInit();
 });

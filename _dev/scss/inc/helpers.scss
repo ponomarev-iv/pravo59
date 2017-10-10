@@ -29,6 +29,32 @@
     font-size: .85em;
 }
 
+.container-flex{
+    display: flex;
+    justify-content: space-between;
+
+    @include respondTo(tablet){
+        flex-direction: column;
+    }
+
+    & .content__col{
+
+        @include respondTo(tablet){
+            padding-top: 0;
+        }
+
+        &_sm{
+            @media screen and (max-width: 1180px){
+                padding-top: 0;
+            }
+
+            @include respondTo(tablet){
+                padding-top: 2.5em;
+            }
+        }
+    }
+}
+
 @keyframes arrow-down {
     0% {
         bottom: 30px;
