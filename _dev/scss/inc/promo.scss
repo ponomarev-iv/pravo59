@@ -6,16 +6,23 @@
   background: linear-gradient(45deg, rgba(#cb954f, .8), #fbf1df);
 
   &__wrap{
-    padding-left: 40%;
+    padding-left: 35%;
     background: url('../img/promo-img.png') no-repeat 5% 100% / contain;
+
+    @include respondTo(mobile){
+      background: none;
+      padding: 0 1em;
+    }
   }
 
   &__title{
     color: #582912;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 2em;
+    //font-size: 2em;
     margin-bottom: .3em;
+
+    @include fluid-type(font-size, 320px, 1200px, 22px, 32px);
   }
 
   &__subtitle{
@@ -23,6 +30,8 @@
     font-size: 1.75em;
     line-height: 1.2;
     margin: 0 0 .2em;
+
+    @include fluid-type(font-size, 320px, 1200px, 22px, 28px);
   }
 
   &__txt{
@@ -57,6 +66,10 @@
     padding: .3em 0 .5em;
     display: block;
 
+    @include respondTo(mobile){
+      margin-left: 0;
+    }
+
     & li{
       position: relative;
       padding-left: .8em;
@@ -82,6 +95,10 @@
     padding: 30px 0 0;
     position: relative;
     z-index: 10;
+
+    @include respondTo(mobile){
+      padding-top: 1em;
+    }
   }
 }
 
