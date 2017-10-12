@@ -43,7 +43,13 @@ h1, h2, h3, h4, h5, h6{
 
 .content-wrap{
   padding: 120px 0 30px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #cb954f;
+  //background-color: #fbf1df;
+  background: #fbf1df linear-gradient(-45deg, rgba(#cb954f, .8), #fbf1df);
+  
+  &_white{
+    background: #fff;
+  }
 
   & .section-title_sec{
     margin: 1em 0 .3em;
