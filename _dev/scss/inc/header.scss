@@ -37,19 +37,11 @@
   &__txt{
     //font-size: 1em;
     //color: rgba(0,0,0,.6);
-    text-decoration: none;
+    //text-decoration: none;
     color: #cb954f;
 
 
     @include fluid-type(font-size, 320px, 1200px, 14px, 18px);
-
-    @media screen and (max-width: 1180px){
-      padding-left: 50px;
-    }
-
-    @include respondTo(mobile){
-      padding-left: 45px;
-    }
 
     &_accent{
       display: block;
@@ -62,13 +54,33 @@
     }
   }
 
+  &__logo{
+    text-decoration: none;
+    padding-left: 70px;
+    background: url('../img/logo.png') no-repeat 0 50%;
+
+    @media screen and (max-width: 1180px){
+      margin-left: 50px;
+    }
+
+    @include respondTo(mobile){
+      padding-left: 45px;
+      background: none;
+      margin-left: 0;
+    }
+
+    &:hover{
+      text-decoration: none;
+    }
+  }
+
   &__location{
     padding-left: 30px;
     //font-size: 1.2em;
     background: url('../img/ico-location.svg') no-repeat scroll transparent;
     color: #582912;
 
-    @include fluid-type(font-size, 320px, 1200px, 16px, 19px);
+    @include fluid-type(font-size, 320px, 1200px, 14px, 19px);
 
     @include respondTo(mobile){
       margin: 1em 0;
@@ -81,7 +93,7 @@
     padding-left: 30px;
     background: url('../img/ico-phone.svg') no-repeat scroll transparent 0 10%;
 
-    @include fluid-type(font-size, 320px, 1200px, 16px, 19px);
+    @include fluid-type(font-size, 320px, 1200px, 14px, 19px);
 
     @include respondTo(mobile){
       padding-left: 45px;
