@@ -56,6 +56,6 @@ h1, h2, h3, h4, h5, h6{
   }
 
   @include respondTo(mobile){
-    padding-top: 220px;
+    padding-top: 40px;
   }
 }

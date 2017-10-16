@@ -15,7 +15,7 @@
   border-bottom: 1px solid #cccccc;
 
   @include respondTo(mobile){
-    //position: relative;
+    position: relative;
     height: auto;
     padding: 1em 0;
     //z-index: 1;
