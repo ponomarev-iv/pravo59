@@ -59,6 +59,13 @@
     }
 }
 
+.hide-mobile{
+
+    @include respondTo(mobile){
+        display: none !important;
+    }
+}
+
 @keyframes arrow-down {
     0% {
         bottom: 30px;
