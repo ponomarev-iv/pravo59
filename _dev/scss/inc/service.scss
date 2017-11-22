@@ -2,71 +2,16 @@
  * Created by Pompo on 03.10.2017.
  */
 .service{
-  padding: 40px 0;
-  //background-color: #fbf1df;
-  background-color: #fff;
-  border-bottom: 1px solid #ccc;
-  position: relative;
-  overflow: hidden;
+  padding: 2em 0;
 
-  @media screen and (max-width: 1180px){
-    padding-bottom: 200px;
-  }
-
-  @media screen and (max-width: 639px){
-    padding-bottom: 40px;
-  }
-
-  &:before{
-    position: absolute;
-    content: '';
-    background: url('../img/vesi.png') no-repeat;
-    width: 400px;
-    height: 400px;
-    bottom: -75px;
-    right: -50px;
-
-    @media screen and (max-width: 1600px){
-      right: -190px;
-    }
-
-    @media screen and (max-width: 1180px){
-      right: -50px;
-    }
-
-    @media screen and (max-width: 639px){
-      display: none;
-    }
-  }
-
-  &__wrap{
+  &__row{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   &__item{
-    width: 23%;
-    //border: 2px solid #fbf1df;
-    border: 2px solid #cb954f;
-    display: flex;
-    color: #582912;
-    align-items: center;
-    border-radius: 20px;
-    text-decoration: none;
-    justify-content: center;
-    padding: 2em;
-    margin-bottom: 2em;
-    font-size: 1.5em;
-    text-align: center;
-    background-color: rgba(#fbf1df,.3);
-    transition: all ease-out .33s;
-    z-index: 10;
-    position: relative;
-
-    @include respondTo(tablet){
-      font-size: 1.25em;
-    }
+    width: 49%;
 
     @include respondTo(mobile){
       width: 45%;
@@ -74,42 +19,6 @@
 
     @include respondTo(small){
       width: 100%;
-    }
-
-    &:hover{
-      box-shadow: 0 4px 8px rgba(0,0,0,.2);
-      background-color: #fbf1df;
-      transform: translateY(-16px);
-    }
-  }
-
-  & .btn{
-    text-decoration: none;
-    background-color: #cb954f;
-    text-align: center;
-    margin: 0 auto;
-    display: block;
-    padding: 1.2em;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    border-radius: .8em;
-    //border: 1px solid #582912;
-    max-width: 360px;
-    font-weight: 700;
-    color: #fff;
-    transition: box-shadow ease .3s;
-
-    @include respondTo(tablet){
-      margin: 0;
-    }
-
-    @include respondTo(small){
-      max-width: none;
-      font-size: 1em;
-    }
-
-    &:hover{
-      box-shadow: 0 4px 8px rgba(0,0,0,.2);
     }
   }
 }

@@ -1,0 +1,60 @@
+/**
+ * Created by Pompo on 22.11.2017.
+ */
+.card{
+  background-color: #fff;
+  box-shadow: 0 2px 0 rgba(0,0,0,.2);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+
+  &__img{
+    height: 160px;
+    overflow: hidden;
+
+    & img{
+      object-fit: cover;
+      min-height: 100%;
+    }
+  }
+
+  &__body{
+    padding: 20px;
+  }
+
+  &__footer{
+    padding: 0 20px 20px;
+    align-self: flex-end;
+    margin-top: auto;
+  }
+
+  &__title{
+    font-weight: 700;
+    color: #cb954f;
+    font-size: 1.25em;
+    line-height: 1.1;
+    margin-bottom: .5em;
+  }
+
+  &__link{
+    text-decoration: none;
+    border-radius: 3px;
+    height: 40px;
+    color: #582912;
+    position: relative;
+    padding-right: .5em;
+
+    &:after{
+      content: '';
+      position: absolute;
+      right: 0;
+      top: calc(50% - 1px);
+      width: 4px;
+      height: 4px;
+      background: transparent;
+      border-top: 1px solid #582912;
+      border-right: 1px solid #582912;
+      transform: rotate(45deg);
+    }
+  }
+}

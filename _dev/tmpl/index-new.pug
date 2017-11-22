@@ -1,0 +1,106 @@
+extends inc/base
+
+block title
+    title= 'Юридическом центре Право и Cемья'
+
+block content
+
+    section(class="content-wrap")
+        .container.container-flex
+
+            .content__col
+                h1.section-title.section-title_no-mrg Юридические услуги по&nbsp;Семейным делам
+                p.section-subtitle Опыт ежедневной работы более 12 лет
+
+                section.service
+                    .service__row
+                        .card.service__item
+                            .card__img
+                                img(src="img/rastirzheniye-braka.jpg")
+                            .card__body
+                                h2.card__title Расторжение брака
+                                ul.list
+                                    li если супруг(а) уклоняется от расторжения брака
+                                    li если есть н/летние дети
+                                    li если супруг(а) живет в другом городе
+                            .card__footer
+                                a.card__link(href="#") Подробнее
+
+                        .card.service__item
+                            .card__img
+                                img(src="img/razdel.jpg")
+                            .card__body
+                                h2.card__title Раздел имущества
+                                ul.list
+                                    li раздел совместного имущества
+                                    li раздел долгов и кредитов
+                                    li раздел ипотеки
+                                    li выдел доли в квартире
+                            .card__footer
+                                a.card__link(href="#") Подробнее
+
+                        .card.service__item
+                            .card__img
+                                img(src="img/jilishnie-spori.jpg")
+                            .card__body
+                                h2.card__title Жилищные споры
+                                ul.list
+                                    li заселение / выселение из квартиры
+                                    li определение порядка пользования квартирой
+                                    li сопровождение сделок с недвижимостью
+                            .card__footer
+                                a.card__link(href="#") Подробнее
+
+                        .card.service__item
+                            .card__img
+                                img(src="img/aliment.jpg")
+                            .card__body
+                                h2.card__title Взыскание алиментов
+                                ul.list
+                                    li в долях от заработной платы
+                                    li в твердой денежной сумме
+                                    li если отец (мать) не работает
+                                    li если нет дохода у родителя
+                                    li взыскание дополнителных расходов на содержание ребенка
+                            .card__footer
+                                a.card__link(href="#") Подробнее
+
+
+
+            aside.content__col.content__col_sm
+                .add-block
+                    h3.add-block__title Полезно знать
+                    ul.article-list
+                        li
+                            a(href="#") Расторжение брака через суд
+                        li
+                            a(href="#") Раздел имущества супругов
+                        li
+                            a(href="#") Вызяскание алиментов
+                        li
+                            a(href="#") Споры о проживании детей
+                        li
+                            a(href="#") Выселение после развода
+                        li
+                            a(href="#") Лишение родительских прав
+                        li
+                            a(href="#") Установление/оспаривание отцовства
+                        li
+                            a(href="#") Бракоразводный процесс
+                        li
+                            a(href="#") Раздел ипотеки при разоде
+                        li
+                            a(href="#") Как взыскать алименты с безработного
+                        li
+                            a(href="#") Доказательства для установленря отцовства
+                        li
+                            a(href="#") Определение порядка встреч с ребенком
+                        li
+                            a(href="#") Признание брачного договора недействительным
+                        li
+                            a(href="#") Как завести речь о заключение брачного довогора
+                        li
+                            a(href="#") Консультация юриста по разводам
+                        li
+                            a(href="#") Оформление наследства после пропуска срока
+    include inc/contact-block.html

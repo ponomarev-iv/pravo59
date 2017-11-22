@@ -9,6 +9,7 @@ html, body{
 body{
   font-family: 'PT Sans', Arial, sans-serif;
   color: #333;
+  background-color: #f2f2f2;
 }
 
 a{
@@ -28,13 +29,9 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .container{
-  max-width: 1200px;
+  max-width: 980px;
   margin: 0 auto;
   padding: 0 1em;
-
-  @media screen and (max-width: 1400px){
-    max-width: 980px;
-  }
 }
 
 #page-wrap{
@@ -42,9 +39,9 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .content-wrap{
-  padding: 120px 0 30px;
+  padding: 40px 0;
   border-bottom: 1px solid #cb954f;
-  background-color: #fbf1df;
+  //background-color: #fbf1df;
   //background: #fbf1df linear-gradient(-45deg, rgba(#cb954f, .8), #fbf1df);
   
   &_white{
@@ -57,5 +54,17 @@ h1, h2, h3, h4, h5, h6{
 
   @include respondTo(mobile){
     padding-top: 40px;
+  }
+}
+
+.add-block{
+  background-color: #fff;
+  box-shadow: 0 2px 0 rgba(0,0,0,.2);
+  padding: 20px;
+
+  &__title{
+    color: #333;
+    font-size: 1.25em;
+    font-weight: 700;
   }
 }

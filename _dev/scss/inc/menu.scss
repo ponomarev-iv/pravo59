@@ -15,11 +15,6 @@
   z-index: 100;
   top: 90px;
 
-  @media screen and (max-width: 1600px){
-    padding: 30px;
-    width: 30%;
-  }
-
   @include respondTo(tablet){
     padding: 1em;
     width: 40%;
@@ -97,13 +92,11 @@
   transform: rotate(0deg);
   cursor: pointer;
   z-index: 101;
+  display: none;
 
-  @media screen and (max-width: 1180px){
-    left: 1em;
-  }
-
-  @include respondTo(mobile){
+  @include respondTo(small){
     top: 1.5em;
+    display: block;
   }
 }
 

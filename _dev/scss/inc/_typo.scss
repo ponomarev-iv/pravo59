@@ -2,14 +2,13 @@
  * Created by Pompo on 03.10.2017.
  */
 .section-title{
-  text-align: center;
   font-weight: 700;
-  //font-size: 2.5em;
-  margin-bottom: 1em;
+  margin-bottom: .5em;
   color: #582912;
+  //color: #333;
   line-height: 1.25;
 
-  @include fluid-type(font-size, 320px, 1200px, 28px, 40px);
+  @include fluid-type(font-size, 320px, 1200px, 18px, 32px);
 
   &_sec{
     //font-size: 1.5em;
@@ -17,6 +16,18 @@
 
     @include fluid-type(font-size, 320px, 1200px, 20px, 24px);
   }
+
+  &_no-mrg{
+    margin-bottom: 0;
+  }
+}
+
+.section-subtitle{
+  margin: .5em 0;
+  //color: #582912;
+
+  @include fluid-type(font-size, 320px, 1200px, 16px, 20px);
+
 }
 
 p{
@@ -65,7 +76,6 @@ p{
     & a{
       color: #582912;
       text-decoration: none;
-      font-size: 1.2em;
       transition: color ease .3s;
 
       &:hover{
