@@ -4,7 +4,6 @@
 
 .nav-menu{
   background-color: #fff;
-  padding: .5em 0;
   box-shadow: 0 4px 12px rgba(0,0,0,.07);
   z-index: 10;
   border-top: 1px solid #ccc;
@@ -13,19 +12,26 @@
   & .container{
     display: flex;
     align-items: center;
+    position: relative;
   }
 
   &__link{
     font-size: 1.25em;
-    padding-right: 2em;
+    padding: 22px 2em 22px 0;
     color: #cb954f;
-    transition: opacity ease .3s;
+    transition: color ease .3s;
     text-decoration: none;
     font-weight: 700;
     letter-spacing: 0.01ex;
+    cursor: pointer;
+    z-index: 99;
 
     &:hover{
-      opacity: .8;
+      color: rgba(#cb954f, .8);
+    }
+
+    &_drop{
+      position: relative;
     }
   }
 
@@ -47,6 +53,44 @@
     &:hover{
       opacity: .8;
       box-shadow: 0 4px 12px rgba(0,0,0,.07);
+    }
+  }
+
+  //выпадающее меню
+  &__sub-nav{
+    display: none;
+    position: absolute;
+    padding: 1rem 20px;
+    background-color: #fff;
+    left: -20px;
+    box-sizing: border-box;
+    top: 64px;
+    z-index: 99;
+    box-shadow: 0 4px 16px rgba(0,0,0,.15);
+    min-width: 240px;
+
+    &.is-view{
+      display: block;
+    }
+  }
+
+  //ссылки в выпадающем меню
+  &__sub-link{
+    text-decoration: none;
+    color: #582912;
+    font-weight: 400;
+    padding-bottom: .85em;
+    display: block;
+    font-size: 1rem;
+    transition: color ease .3s;
+
+    &:hover{
+      color: #cb954f;
+      text-decoration: underline;
+    }
+
+    &:last-of-type{
+      padding-bottom: 0;
     }
   }
 }

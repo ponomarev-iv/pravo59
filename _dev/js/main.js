@@ -71,7 +71,20 @@ function magnificInit() {
         });
     }
     else return false;
+}
 
+function dropMenu(){
+    var btn = $('.js-drop-link');
+
+    if(btn.length){
+        $(btn)
+            .mouseenter(function(){
+                $('.js-drop-menu').addClass('is-view')
+            })
+            .mouseleave(function(){
+                $('.js-drop-menu').removeClass('is-view')
+            })
+    }
 }
 
 $(document).ready(function(){
@@ -79,4 +92,5 @@ $(document).ready(function(){
     scrollDown();
     animateHero();
     magnificInit();
+    dropMenu();
 });
