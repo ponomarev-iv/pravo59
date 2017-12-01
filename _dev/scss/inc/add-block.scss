@@ -1,0 +1,53 @@
+/**
+ * Created by Pompo on 02.12.2017.
+ */
+.add-block{
+  box-shadow: 0 2px 0 rgba(0,0,0,.2);
+  background-color: #fff;
+  margin-bottom: 3rem;
+  padding: 20px 0;
+
+  //боковая панель со статьями
+  &_article{
+    background: #fff url('../img/pero-bg.jpg') 0 100% no-repeat;
+    padding: 20px 20px 100px;
+
+    & .add-block__title{
+      padding: 0;
+    }
+  }
+
+  //боковая панель с меню
+  &_menu{
+    background: #fff url('../img/vesi.png') 50% 100% no-repeat;
+    padding-bottom: 160px;
+  }
+
+  &__title{
+    color: #333;
+    font-size: 1.25em;
+    font-weight: 700;
+    padding: 0 1rem;
+  }
+
+  //боковая панель с ценами на услуги
+  &__price{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  
+  &__price-row{
+    padding: .75rem 1rem;
+    border-top: 1px solid #ccc;
+    
+    &_cost{
+      text-align: right;
+      font-weight: 700;
+      padding-top: 0;
+      border-top: none;
+      font-size: 1.1rem;
+      //background-color: #;
+    }
+  }
+}

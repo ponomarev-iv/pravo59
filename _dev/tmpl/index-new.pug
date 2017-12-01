@@ -7,6 +7,7 @@ block content
 
     section(class="content-wrap")
         .container.container-flex
+
             .content__col
                 h1.section-title.section-title_no-mrg Юридические услуги по&nbsp;Семейным делам
                 .accent-block
@@ -118,40 +119,103 @@ block content
 
 
 
+
+
+            aside.content__col.content__col_sm
+                include inc/articel-block
+                include inc/sub-menu
+                .accent-block.accent-block_link
+                    a.accent-block__link(href="#") Консультации<br> Судебное представительство
+
+    section.content-wrap(id="price")
+        .container.container-flex
+            .content__col
+                h2.section-title.section-title_sec Наша специализация&nbsp;&mdash; Семейно&nbsp;&mdash; правовые споры.
+                .txt-block
+                    p Если Вы&nbsp;ищете юриста&nbsp;&mdash; специалиста именно по&nbsp;семейным делам, то&nbsp;Вы попали в&nbsp;нужную компанию. Более 14&nbsp;лет наши юристы ежедневно решают самые сложные и&nbsp;запутанные случаи, возникающие в&nbsp;юридической практике, консультируют и&nbsp;участвуют в&nbsp;судебных заседаниях, с&nbsp;успехом добиваются справедливых и&nbsp;законных решений.
+                    p Итогом нашей работы будет решение суда с&nbsp;максимально благоприятным для Вас результатом.
+                    p <b>Порядок взаимодействия:</b>
+                    p <b>Встреча (консультация).</b><br>
+                        | На&nbsp;встрече будут установлены обстоятельства конкретного дела, проанализированы документы. На&nbsp;основании этого будет сделан вывод о&nbsp;перспективах дела.
+                    p <b>Подготовка искового заявления.</b><br>
+                        | При подготовке иска подбираются нормы закона, на&nbsp;основании которых формируются исковые требования. Изучается судебная практика (Постановления Пленума ВС&nbsp;РФ, примеры аналогичных дел в&nbsp;Пермском крае и&nbsp;по&nbsp;России), формируется доказательная база, составляются необходимые ходатайства, рассчитывается гос. пошлина, определяется подсудность дела. После подготовки исковое заявление с&nbsp;приложениями подается в&nbsp;суд.
+                    p <b>Судебное представительство.</b><br>
+                        | Юрист присутствует на&nbsp;всех судебных заседаниях до&nbsp;вынесения судом решения. Участие юриста в&nbsp;судебных заседаниях возможно в&nbsp;Ваше отсутствие. Для этого достаточно выдать доверенность на&nbsp;ведение дела и&nbsp;не&nbsp;испытывать стресс от&nbsp;участия в&nbsp;суде.
+                    p <b>Поэтапная оплата услуг.</b><br>
+                        | Оплата услуг производится в&nbsp;рассрочку. Сумма делится на&nbsp;2&nbsp;&mdash; 3&nbsp;платежа. При заключении договора уплачивается аванс, и&nbsp;юрист (адвокат) по&nbsp;семейному делу незамедлительно приступает к&nbsp;работе. Уплаченная сумма признается судебными расходами и&nbsp;взыскивается с&nbsp;проигравшей стороны.
+                    p Обращайтесь в&nbsp;Юридический центр &laquo;Право и&nbsp;Семья&raquo;, где Вам обязательно помогут.
+
+                    .tag-block
+                        .tag-block__title Теги:
+                        .tag-block__container
+                            span.tag-block__item Семейный юрист,
+                            span.tag-block__item Семейный адвокат,
+                            span.tag-block__item Юридическая помощь,
+                            span.tag-block__item Судебное представительство,
+                            span.tag-block__item Консультация юриста
+
+                .accent-block
+                    .accent-block__txt Стоимость юридических услуг признается судебными расходами и
+                        | &nbsp;подлежит взысканию с&nbsp;проигравшей стороны
+
             aside.content__col.content__col_sm
                 .add-block
-                    h3.add-block__title Полезно знать
-                    ul.article-list
-                        li
-                            a(href="#") Расторжение брака через суд
-                        li
-                            a(href="#") Раздел имущества супругов
-                        li
-                            a(href="#") Вызяскание алиментов
-                        li
-                            a(href="#") Споры о проживании детей
-                        li
-                            a(href="#") Выселение после развода
-                        li
-                            a(href="#") Лишение родительских прав
-                        li
-                            a(href="#") Установление/оспаривание отцовства
-                        li
-                            a(href="#") Бракоразводный процесс
-                        li
-                            a(href="#") Раздел ипотеки при разоде
-                        li
-                            a(href="#") Как взыскать алименты с безработного
-                        li
-                            a(href="#") Доказательства для установленря отцовства
-                        li
-                            a(href="#") Определение порядка встреч с ребенком
-                        li
-                            a(href="#") Признание брачного договора недействительным
-                        li
-                            a(href="#") Как завести речь о заключение брачного довогора
-                        li
-                            a(href="#") Консультация юриста по разводам
-                        li
-                            a(href="#") Оформление наследства после пропуска срока
+                    .add-block__title  Стоимость услуг
+                    .add-block__price
+                        .add-block__price-row.add-block__price-row_name
+                            | Консультация в&nbsp;офисе (по&nbsp;предварительной записи)
+                        .add-block__price-row.add-block__price-row_cost
+                            | 500 ₽
+                        .add-block__price-row.add-block__price-row_name
+                            | Составление искового заявления
+                        .add-block__price-row.add-block__price-row_cost
+                            | от 1 500 ₽
+                        .add-block__price-row.add-block__price-row_name
+                            | Расторжение брака в&nbsp;суде
+                        .add-block__price-row.add-block__price-row_cost
+                            | от 5 000 ₽
+                        .add-block__price-row.add-block__price-row_name
+                            | Раздел имущества супругов
+                        .add-block__price-row.add-block__price-row_cost
+                            | от 10 000 ₽
+                        .add-block__price-row.add-block__price-row_name
+                            | Взыскание алиментов
+                        .add-block__price-row.add-block__price-row_cost
+                            | от 8 000 ₽
+                        .add-block__price-row.add-block__price-row_name
+                            | Определение места жительства ребенка с&nbsp;одним из&nbsp;родителей
+                        .add-block__price-row.add-block__price-row_cost
+                            | от 8 000 ₽
+                        .add-block__price-row.add-block__price-row_name
+                            | Определение порядка общения с&nbsp;ребенком
+                        .add-block__price-row.add-block__price-row_cost
+                            | от 8 000 ₽
+                        .add-block__price-row.add-block__price-row_name
+                            | Установление/Оспаривание отцовства
+                        .add-block__price-row.add-block__price-row_cost
+                            | от 12 000 ₽
+                        .add-block__price-row.add-block__price-row_name
+                            | Лишение родительских прав
+                        .add-block__price-row.add-block__price-row_cost
+                            | от 10 000 ₽
+                        .add-block__price-row.add-block__price-row_name
+                            | Снятие с&nbsp;регистрационного учета бывших членов семьи
+                        .add-block__price-row.add-block__price-row_cost
+                            | от 8 000 ₽
+                        .add-block__price-row.add-block__price-row_name
+                            | Определение порядка пользования жилым помещением
+                        .add-block__price-row.add-block__price-row_cost
+                            | от 10 000 ₽
+                        .add-block__price-row.add-block__price-row_name
+                            | Споры о&nbsp;наследстве
+                        .add-block__price-row.add-block__price-row_cost
+                            | от 10 000 ₽
+                        .add-block__price-row.add-block__price-row_name
+                            | Участие в&nbsp;суде апелляционной инстанции
+                        .add-block__price-row.add-block__price-row_cost
+                            | 5 000 ₽
+                        .add-block__price-row.add-block__price-row_name
+                            | Составление апелляционной или кассационной жалобы
+                        .add-block__price-row.add-block__price-row_cost
+                            | 5 000 ₽
     include inc/contact-block.html

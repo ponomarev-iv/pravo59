@@ -11,11 +11,12 @@
   @include fluid-type(font-size, 320px, 1200px, 18px, 32px);
 
   &_sec{
-    //font-size: 1.5em;
     text-align: left;
+    padding-left: 20px;
 
     @include fluid-type(font-size, 320px, 1200px, 20px, 24px);
   }
+
 
   &_no-mrg{
     margin-bottom: 0;

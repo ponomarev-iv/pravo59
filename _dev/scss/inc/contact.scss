@@ -3,53 +3,41 @@
  */
 .contact{
   padding: 3em 0;
-
-  @include respondTo(small){
-    padding: 2em 0;
-  }
-
-  &__wrap{
-    display: flex;
-    justify-content: space-between;
-
-    @include respondTo(tablet){
-      flex-direction: column;
-      justify-content: flex-start;
-    }
-  }
+  position: relative;
+  height: 500px;
 
   &__map{
-    width: 60%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
 
-    @include respondTo(tablet){
-      width: 100%;
-      order: 2;
-    }
   }
 
   &__info{
-    width: 35%;
-
-    @include respondTo(tablet){
-      width: 100%;
-    }
+    width: 43%;
+    position: relative;
+    z-index: 10;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 12px;
   }
 
   &__title{
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-bottom: 1em;
     color: #333;
   }
 
   &__data-row{
     margin-bottom: 1em;
-    font-size: 1.25em;
-    line-height: 1.3;
-
-    @include respondTo(small){
-      font-size: 1em;
-    }
+    font-size: 1.05em;
+    line-height: 1.25;
 
     &:after{
       content: '';
@@ -63,23 +51,23 @@
     width: 25%;
     font-weight: 700;
     max-width: 80px;
+    font-size: 1em;
   }
 
   &__data-txt{
     float: left;
     width: 70%;
     margin-left: 5%;
+    font-size: 1em;
 
     & a{
       text-decoration: none;
       color: #cb954f;
     }
+
   }
 
-  & .section-title{
-
-    @include respondTo(tablet){
-      text-align: left;
-    }
+  & .button{
+    max-width: none;
   }
 }

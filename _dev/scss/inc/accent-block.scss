@@ -1,28 +1,42 @@
 .accent-block{
     padding: 1rem;
-    position: relative;
     margin: 20px 0;
-
-    &:before,
-    &:after{
-        position: absolute;
-        content: '';
-        width: 100%;
-        height: 1px;
-        background-color: #333;
-        //left: calc(50% - 100px);
-        left: 0;
-        top: 0;
-    }
-
-    &:after{
-        top: auto;
-        bottom: 0;
-    }
+    border-top: 1px solid #582912;
+    border-bottom: 1px solid #582912;
 
     &__txt{
         text-align: center;
         font-size: 1.35em;
         color: #333;
+    }
+
+    &__link{
+        text-align: center;
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: #582912;
+        display: block;
+        transition: color ease-out .33s;
+        line-height: 1.5;
+
+        &:hover{
+            color: #cb954f;
+        }
+    }
+
+    &_link{
+        padding: 1rem 0;
+        position: relative;
+
+        &:before{
+            position: absolute;
+            content: '';
+            background: #f2f2f2 url('../img/icon-link.svg') no-repeat 50% 50%;
+            width: 40px;
+            height: 40px;
+            top: -20px;
+            left: calc(50% - 20px);
+            background-size: 20px 20px;
+        }
     }
 }
