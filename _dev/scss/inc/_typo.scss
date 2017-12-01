@@ -66,11 +66,12 @@ p{
       position: absolute;
       content: '';
       border-radius: 50%;
-      width: 5px;
-      height: 5px;
-      background-color: #582912;
+      width: 6px;
+      height: 6px;
+      //background-color: #582912;
+      border: 1px solid #cb954f;
       left: 0;
-      top: 10px;
+      top: 7px;
     }
 
     & a{
