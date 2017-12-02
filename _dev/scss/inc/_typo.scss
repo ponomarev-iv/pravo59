@@ -17,10 +17,28 @@
     @include fluid-type(font-size, 320px, 1200px, 20px, 24px);
   }
 
+  &_in-content{
+    padding-left: 20px;
+    margin-bottom: .35em !important;
+
+    & span{
+      color: #333;
+      font-size: .8em;
+    }
+  }
 
   &_no-mrg{
     margin-bottom: 0;
   }
+}
+
+.content-title{
+  color: #582912;
+  font-weight: 700;
+  margin-bottom: .25em;
+  line-height: 1.25;
+
+  @include fluid-type(font-size, 320px, 1200px, 18px, 22px);
 }
 
 .section-subtitle{

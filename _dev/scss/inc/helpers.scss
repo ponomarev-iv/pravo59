@@ -66,6 +66,20 @@
     }
 }
 
+figcaption{
+    font-weight: 700;
+    font-size: 1.1em;
+    padding-top: .35em;
+}
+
+figure{
+    margin-bottom: 1rem;
+
+    & img{
+        box-shadow: 0 2px 6px rgba(0,0,0,.15);
+    }
+}
+
 @keyframes arrow-down {
     0% {
         bottom: 30px;

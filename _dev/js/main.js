@@ -17,36 +17,16 @@ function mobileMenu(){
 }
 
 function scrollDown(){
-    var scrollBtn = $('.js-scroll-down');
+    var scrollBtn = $('.js-scroll-link');
 
     if(scrollBtn.length){
         scrollBtn.on('click', function(e){
             e.preventDefault();
             var id = $(this).attr('href'),
-                top = $(id).offset().top - 90;
+                top = $(id).offset().top;
 
-            $('body, html').animate({scrollTop: top}, 1000);
+            $('body, html').animate({scrollTop: top}, 900);
         })
-    }
-    else return false;
-}
-
-//animation hero banner
-function animateHero(){
-    if($('.hero__title').length){
-        var header = $('.header'),
-            heroTitle = $('.hero__title'),
-            heroSubtitle = $('.hero__subtitle'),
-            heroBtn = $('.hero__btn'),
-            heroList = $('.hero__list li'),
-            tl = new TimelineLite();
-
-        tl
-            .from(header, .6, {y: -35, autoAlpha: 0, ease:Power1.easeOut})
-            .from(heroTitle, 0.4, {y: -15, autoAlpha: 0, ease:Power1.easeOut}, '-=0.15')
-            .from(heroSubtitle, 0.4, {y: -30, autoAlpha: 0, ease:Power1.easeOut}, '-=0.15')
-            .from(heroList, 0.4, {x: -50, autoAlpha: 0, ease:Power1.easeOut}, '-=0.15')
-            .from(heroBtn, 0.4, {y: 20, autoAlpha: 0, ease:Power1.easeOut}, '-=0.15');
     }
     else return false;
 }
@@ -87,10 +67,21 @@ function dropMenu(){
     }
 }
 
-$(document).ready(function(){
+function activateMenuLink(){
+    $('a.nav-menu__link').each(function(){
+        var location = window.location.href,
+            link = this.href;
+
+        if(location == link) {
+            $(this).addClass('current');
+        }
+    })
+}
+
+$('document').ready(function(){
     mobileMenu();
     scrollDown();
-    animateHero();
     magnificInit();
     dropMenu();
+    activateMenuLink();
 });

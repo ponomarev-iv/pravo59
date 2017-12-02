@@ -23,6 +23,10 @@
     padding-bottom: 160px;
   }
 
+  &_pad{
+    padding: 20px;
+  }
+
   &__title{
     color: #333;
     font-size: 1.25em;
@@ -48,6 +52,28 @@
       border-top: none;
       font-size: 1.1rem;
       //background-color: #;
+    }
+  }
+
+  &__price-link{
+    margin-top: .5em;
+    color: #582912;
+    position: relative;
+    padding: 0 .5em 0 20px;
+    display: inline-block;
+    text-decoration: none;
+
+    &:after{
+      content: '';
+      position: absolute;
+      right: 0;
+      top: calc(50% - 1px);
+      width: 4px;
+      height: 4px;
+      background: transparent;
+      border-top: 1px solid #582912;
+      border-right: 1px solid #582912;
+      transform: rotate(45deg);
     }
   }
 }

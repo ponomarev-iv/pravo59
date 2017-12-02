@@ -3,6 +3,18 @@
     margin: 20px 0;
     border-top: 1px solid #582912;
     border-bottom: 1px solid #582912;
+    position: relative;
+
+    &:before{
+        position: absolute;
+        content: '';
+        background: #f0f0f0 url('../img/icon-quote.svg') no-repeat 50% 50%;
+        width: 40px;
+        height: 40px;
+        top: -20px;
+        left: calc(50% - 20px);
+        background-size: 21px 16px;
+    }
 
     &__txt{
         text-align: center;
@@ -26,16 +38,9 @@
 
     &_link{
         padding: 1rem 0;
-        position: relative;
 
         &:before{
-            position: absolute;
-            content: '';
-            background: #f2f2f2 url('../img/icon-link.svg') no-repeat 50% 50%;
-            width: 40px;
-            height: 40px;
-            top: -20px;
-            left: calc(50% - 20px);
+            background: #f0f0f0 url('../img/icon-link.svg') no-repeat 50% 50%;
             background-size: 20px 20px;
         }
     }
