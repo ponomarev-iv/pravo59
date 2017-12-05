@@ -27,6 +27,11 @@
     z-index: 99;
     margin-right: 2em;
     position: relative;
+    white-space: nowrap;
+
+    @include respondTo(tablet){
+      font-size: 1em;
+    }
 
     &:hover{
       color: rgba(#cb954f, .8);
@@ -59,11 +64,14 @@
     padding: 0 1em;
     height: 48px;
     line-height: 46px;
-    font-size: 1.2em;
+    //font-size: 1.2em;
     cursor: pointer;
     transition: opacity ease .3s;
     text-decoration: none;
     display: inline-block;
+    white-space: nowrap;
+
+    @include fluid-type(font-size, 768px, 1200px, 16px, 20px);
 
     &:hover{
       opacity: .8;
@@ -73,7 +81,9 @@
 
   //выпадающее меню
   &__sub-nav{
-    display: none;
+    //display: none;
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     padding: 1rem 20px;
     background-color: #fff;
@@ -83,9 +93,19 @@
     z-index: 99;
     box-shadow: 0 4px 16px rgba(0,0,0,.15);
     min-width: 240px;
+    transition: all ease-in-out .3s;
+    transform: translateY(30px);
+
+    @include respondTo(tablet){
+      top: 60px;
+      left: -16px;
+    }
 
     &.is-view{
-      display: block;
+      //display: block;
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
     }
   }
 
