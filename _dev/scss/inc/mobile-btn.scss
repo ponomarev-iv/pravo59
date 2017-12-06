@@ -1,0 +1,98 @@
+/**
+ * Created by Pompo on 06.12.2017.
+ */
+//mobile menu button
+.mobile-btn {
+  position: absolute;
+  top: 2em;
+  right: 1em;
+  width: 32px;
+  height: 24px;
+  transform: rotate(0deg);
+  cursor: pointer;
+  z-index: 101;
+  display: none;
+
+  @include respondTo(mobile){
+    top: 1.5em;
+    display: block;
+  }
+}
+
+.mobile-btn span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 50%;
+  background: #cb954f;
+  opacity: 1;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.mobile-btn span:nth-child(even) {
+  left: 50%;
+  border-radius: 0 3px 3px 0;
+}
+
+.mobile-btn span:nth-child(odd) {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.mobile-btn span:nth-child(1), .mobile-btn span:nth-child(2) {
+  top: 0;
+}
+
+.mobile-btn span:nth-child(3), .mobile-btn span:nth-child(4) {
+  top: 9px;
+}
+
+.mobile-btn span:nth-child(5), .mobile-btn span:nth-child(6) {
+  top: 18px;
+}
+
+.mobile-btn.open span:nth-child(1), .mobile-btn.open span:nth-child(6) {
+  transform: rotate(45deg);
+}
+
+.mobile-btn.open span:nth-child(2), .mobile-btn.open span:nth-child(5) {
+  transform: rotate(-45deg);
+}
+
+.mobile-btn.open span:nth-child(1) {
+  left: 2px;
+  top: 3px;
+}
+
+.mobile-btn.open span:nth-child(2) {
+  left: calc(50% - 2px);
+  top: 3px;
+}
+
+.mobile-btn.open span:nth-child(3) {
+  left: -50%;
+  opacity: 0;
+}
+
+.mobile-btn.open span:nth-child(4) {
+  left: 100%;
+  opacity: 0;
+}
+
+.mobile-btn.open span:nth-child(5) {
+  left: 2px;
+  top: 14px;
+}
+
+.mobile-btn.open span:nth-child(6) {
+  left: calc(50% - 2px);
+  top: 14px;
+}
+
+.mobile-btn.open {
+  position: fixed;
+  z-index: 101;
+  top: 1.5em;
+  right: 1em;
+}

@@ -7,10 +7,31 @@
   margin-bottom: 3rem;
   padding: 20px 0;
 
+  @include respondTo(tablet){
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  @include respondTo(small){
+    padding: 1rem 0;
+  }
+
   //боковая панель со статьями
   &_article{
     background: #fff url('../img/pero-bg.jpg') 0 100% no-repeat;
     padding: 20px 20px 100px;
+
+    @include respondTo(tablet){
+      width: 49%;
+    }
+
+    @media screen and (max-width: 640px){
+      width: 100%;
+    }
+
+    @include respondTo(small){
+      padding: 1rem 1rem 100px;
+    }
 
     & .add-block__title{
       padding: 0;
@@ -21,10 +42,22 @@
   &_menu{
     background: #fff url('../img/vesi.png') 50% 100% no-repeat;
     padding-bottom: 160px;
+
+    @include respondTo(tablet){
+      width: 49%;
+    }
+
+    @media screen and (max-width: 640px){
+      width: 100%;
+    }
   }
 
   &_pad{
     padding: 20px;
+
+    @include respondTo(small){
+      padding: 1rem;
+    }
   }
 
   &__title{

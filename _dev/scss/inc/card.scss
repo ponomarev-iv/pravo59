@@ -21,20 +21,29 @@
 
   &__body{
     padding: 20px;
+
+    @include respondTo(mobile){
+      padding: 1rem;
+    }
   }
 
   &__footer{
     padding: 0 20px 20px;
     align-self: flex-end;
     margin-top: auto;
+
+    @include respondTo(mobile){
+      padding: 0 1rem 1rem;
+    }
   }
 
   &__title{
     font-weight: 700;
     color: #cb954f;
-    font-size: 1.25em;
     line-height: 1.1;
     margin-bottom: .5em;
+
+    @include fluid-type(font-size, 320px, 1200px, 16px, 20px);
   }
 
   &__link{

@@ -2,7 +2,6 @@
  * Created by Pompo on 03.10.2017.
  */
 .service{
-  padding: 2em 0;
 
   &__row{
     display: flex;
@@ -21,10 +20,6 @@
       .card__img img{
         transform: scale(1.1);
       }
-    }
-
-    @include respondTo(mobile){
-      width: 45%;
     }
 
     @include respondTo(small){

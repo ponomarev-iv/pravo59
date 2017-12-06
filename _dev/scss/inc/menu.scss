@@ -3,39 +3,41 @@
  */
 .menu {
   transition: transform ease-out .33s;
-  transform: translateX(-100%);
-  width: 20%;
-  background-color: rgba(#582912, .85);
+  transform: translateX(200%);
+  width: 50%;
+  background-color: rgba(#582912, .9);
   color: #fff;
-  height: calc(100vh - 90px);
-  display: flex;
+  height: 100vh;
   position: fixed;
   flex-direction: column;
-  padding: 50px;
+  padding: 3em 1em;
   z-index: 100;
-  top: 90px;
-
-  @include respondTo(tablet){
-    padding: 1em;
-    width: 40%;
-  }
+  top: 0;
+  display: none;
 
   @include respondTo(mobile){
-    top: 0;
-    height: 100%;
-    padding-top: 200px;
+    display: flex;
   }
 
   @media screen and (max-width: 640px){
-    width: 50%;
-  }
-
-  @include respondTo(small){
     width: 80%;
   }
 
+  @include respondTo(small){
+    width: 100%;
+    transform: translateX(100%);
+  }
+
   &.is-open {
-    transform: translateX(0);
+    transform: translateX(100%);
+
+    @media screen and (max-width: 640px){
+      transform: translateX(40%);
+    }
+
+    @include respondTo(small){
+      transform: translateX(0);
+    }
 
     & .nav a{
       transform: translateX(0);
@@ -49,7 +51,7 @@
     //font-size: 20px;
     display: block;
     text-decoration: none;
-    transform: translateX(-100%);
+    transform: translateX(200%);
     transition: transform ease-out .7s;
 
     @include fluid-type(font-size, 320px, 1200px, 18px, 20px);
@@ -79,109 +81,5 @@
       opacity: .5;
       cursor: default;
     }
-  }
-}
-
-//mobile menu button
-.mobile-btn {
-  position: absolute;
-  top: 35px;
-  left: 2em;
-  width: 32px;
-  height: 24px;
-  transform: rotate(0deg);
-  cursor: pointer;
-  z-index: 101;
-  display: none;
-
-  @include respondTo(small){
-    top: 1.5em;
-    display: block;
-  }
-}
-
-.mobile-btn span {
-  display: block;
-  position: absolute;
-  height: 3px;
-  width: 50%;
-  background: #cb954f;
-  opacity: 1;
-  transform: rotate(0deg);
-  transition: .25s ease-in-out;
-}
-
-.mobile-btn span:nth-child(even) {
-  left: 50%;
-  border-radius: 0 3px 3px 0;
-}
-
-.mobile-btn span:nth-child(odd) {
-  left: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.mobile-btn span:nth-child(1), .mobile-btn span:nth-child(2) {
-  top: 0;
-}
-
-.mobile-btn span:nth-child(3), .mobile-btn span:nth-child(4) {
-  top: 9px;
-}
-
-.mobile-btn span:nth-child(5), .mobile-btn span:nth-child(6) {
-  top: 18px;
-}
-
-.mobile-btn.open span:nth-child(1), .mobile-btn.open span:nth-child(6) {
-  transform: rotate(45deg);
-}
-
-.mobile-btn.open span:nth-child(2), .mobile-btn.open span:nth-child(5) {
-  transform: rotate(-45deg);
-}
-
-.mobile-btn.open span:nth-child(1) {
-  left: 2px;
-  top: 3px;
-}
-
-.mobile-btn.open span:nth-child(2) {
-  left: calc(50% - 2px);
-  top: 3px;
-}
-
-.mobile-btn.open span:nth-child(3) {
-  left: -50%;
-  opacity: 0;
-}
-
-.mobile-btn.open span:nth-child(4) {
-  left: 100%;
-  opacity: 0;
-}
-
-.mobile-btn.open span:nth-child(5) {
-  left: 2px;
-  top: 14px;
-}
-
-.mobile-btn.open span:nth-child(6) {
-  left: calc(50% - 2px);
-  top: 14px;
-}
-
-.mobile-btn.open {
-  position: fixed;
-  z-index: 101;
-  top: 35px;
-  left: 2em;
-
-  @media screen and (max-width: 1180px){
-    left: 1em;
-  }
-
-  @include respondTo(mobile){
-    top: 1.5em;
   }
 }

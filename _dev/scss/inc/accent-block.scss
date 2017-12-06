@@ -18,8 +18,9 @@
 
     &__txt{
         text-align: center;
-        font-size: 1.35em;
         color: #333;
+
+        @include fluid-type(font-size, 320px, 1200px, 14px, 22px);
     }
 
     &__link{

@@ -53,6 +53,11 @@
       padding-right: 15px;
     }
 
+    @include respondTo(small){
+      padding-right: 0;
+      border-right: none;
+    }
+
     &:hover{
       text-decoration: none;
     }
@@ -63,11 +68,17 @@
     line-height: 1.2;
     color: #333;
 
-    @include fluid-type(font-size, 320px, 1200px, 16px, 26px);
+    @include fluid-type(font-size, 320px, 1200px, 15px, 26px);
 
     @include respondTo(mobile){
       padding-right: 0;
       padding-left: 15px;
+    }
+
+    @include respondTo(small){
+      padding-left: 0;
+      width: 100%;
+      padding-top: 10px;
     }
   }
 

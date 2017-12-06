@@ -8,7 +8,11 @@
   //color: #333;
   line-height: 1.25;
 
-  @include fluid-type(font-size, 320px, 1200px, 18px, 32px);
+  @include fluid-type(font-size, 320px, 1200px, 20px, 32px);
+
+  @include respondTo(tablet){
+    text-align: center;
+  }
 
   &_sec{
     text-align: left;
