@@ -79,10 +79,29 @@ function activateMenuLink(){
     })
 }
 
-$('document').ready(function(){
+function accordionInit(){
+    var btn = $('.js-faq');
+
+    if(btn.length){
+        $(btn).on('click', function() {
+            if($(this).hasClass('is-open')){
+                $(this).removeClass('is-open')
+            }
+            else{
+                $(btn).removeClass('is-open');
+                $(this).addClass('is-open');
+            }
+            $(btn.next()).not($(this).next()).slideUp(400);
+            $(this).next().slideToggle(400);
+        })
+    }
+}
+
+$(document).ready(function(){
     mobileMenu();
     scrollDown();
     magnificInit();
     dropMenu();
     activateMenuLink();
+    accordionInit();
 });
