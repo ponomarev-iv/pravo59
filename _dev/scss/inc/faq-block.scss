@@ -8,6 +8,10 @@
   box-shadow: 0 2px 0 rgba(0,0,0,.2);
   margin: 2rem 0;
 
+  @include respondTo(small){
+    margin: 1rem 0;
+  }
+
   &__question{
     padding: 20px 35px 20px 20px;
     color: #333;
@@ -15,8 +19,13 @@
     position: relative;
     cursor: pointer;
     border-bottom: 1px solid #ccc;
-    font-size: 1.1em;
     line-height: 1.3;
+
+    @include fluid-type(font-size, 320px, 1200px, 14px, 17px);
+
+    @include respondTo(small){
+      padding: 1rem 2rem 1rem 1rem;
+    }
 
     &:after{
       position: absolute;
@@ -30,6 +39,11 @@
       border-left: 2px solid #582912;
       transform: rotate(-45deg);
       transition: transform ease .3s;
+
+      @include respondTo(small){
+        right: 1rem;
+        top: 1.1rem;
+      }
     }
 
     &.is-open{
@@ -44,6 +58,12 @@
     padding: 20px;
     border-bottom: 1px solid #ccc;
     display: none;
+
+    @include fluid-type(font-size, 320px, 1200px, 12px, 16px);
+
+    @include respondTo(small){
+      padding: 1rem;
+    }
   }
 
 }
