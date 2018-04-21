@@ -51,6 +51,21 @@
       left: 0;
     }
   }
+
+  &_chapter{
+    margin: 1rem 0 2.5rem !important;
+
+    & li{
+      &:before{
+        display: none;
+      }
+    }
+
+    & a{
+      color: #cb954f;
+      text-decoration: none;
+    }
+  }
 }
 
 //нумерованый список
