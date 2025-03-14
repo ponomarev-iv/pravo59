@@ -1,17 +1,73 @@
 /**
  * Created by Pompo on 02.12.2017.
  */
-.txt-block{
+.txt-block {
   background-color: #fff;
-  box-shadow: 0 2px 0 rgba(0,0,0,.2);
-  padding: 20px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, .2);
+  padding: 2rem 1.25rem;
   margin-bottom: 3rem;
 
-  @include respondTo(tablet){
+  @include respondTo(tablet) {
     margin-bottom: 1.5rem;
   }
 
-  @include respondTo(small){
+  @include respondTo(small) {
     padding: 1rem;
+  }
+
+  &:not(:first-child) {
+    margin-top: 3rem;
+
+    @include respondTo(tablet) {
+      margin-top: 1.5rem;
+    }
+  }
+
+  &__section {
+    &:not(:first-child) {
+      padding-top: 2.5rem;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.33;
+    margin-bottom: .5em;
+    color: #cb954f;
+
+  }
+
+  & h3.txt-block__title {
+    font-size: 1.5rem;
+  }
+
+  &__text {
+    font-size: 1.125rem;
+    line-height: 1.33;
+
+    & strong {
+      font-weight: 600;
+    }
+  }
+
+  &__list {
+
+    &:not(:first-child) {
+      margin-top: 1.5rem;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+
+    & li {
+      font-size: 1.125rem;
+      font-weight: 600;
+
+      &:not(:last-child) {
+        margin-bottom: .5em;
+      }
+    }
   }
 }

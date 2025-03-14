@@ -7,227 +7,145 @@ block title
 block content
 
     section(class="content-wrap")
+
+
+        .container.container-flex
+            .personal.card
+                .personal__photo
+                    img(src="img/lawyer-shishigin.jpg" alt="Шишигин Валерий Юрьевич")
+                .personal__content
+                    h1.personal__title Шишигин Валерий Юрьевич&nbsp;&mdash;<br> практикующий юрист по&nbsp;семейному праву.
+                    p.personal__text В&nbsp;2003 году успешно окончил очное отделение юридического факультета Пермского Государственного Университета.
+                    ul.personal__list
+                        li <strong>2003&nbsp;г. &mdash;&nbsp;2004&nbsp;г.</strong> &mdash;&nbsp;Следователь прокуратуры
+                        li <strong>2005&nbsp;г. &mdash;&nbsp;2007&nbsp;г.</strong> &mdash;&nbsp;Адвокат (уголовные и&nbsp;гражданские дела)
+                        li <strong>2007&nbsp;г. &mdash;&nbsp;н.в.</strong> &mdash;&nbsp;Юрист по&nbsp;семейным делам (судебное ведение дел, консультации)
         .container.container-flex
             .content__col
-                h1.section-title.section-title_no-mrg Юридические услуги по&nbsp;Семейным делам
+                .txt-block
+                    .txt-block__section
+                        h2.txt-block__title УСЛУГИ
+                        p.txt-block__text Судебное представительство и&nbsp;юридические консультации и&nbsp;по&nbsp;семейным спорам:
+                        ul.list.txt-block__list
+                            li Раздел имущества и&nbsp;долгов супругов;
+                            li Расторжение брака через суд;
+                            li Определение места жительства детей;
+                            li Определение порядка встреч и&nbsp;общения родителя с&nbsp;детьми;
+                            li Взыскание алиментов, в&nbsp;том числе в&nbsp;твердой денежной сумме;
+                            li Наследственные дела (вступление в&nbsp;наследство и&nbsp;оформление права собственности после пропуска срока);
+                            li Установление&nbsp;/ оспаривание отцовства;
+                            li Лишение родительских прав;
+                            li Иные дела, вытекающие из&nbsp;семейных правоотношений;
+
+                    .txt-block__section
+                        h3.txt-block__title ЧЕМ Я&nbsp;МОГУ БЫТЬ ВАМ ПОЛЕЗЕН
+                        p С&nbsp;2007 года я&nbsp;веду дела в&nbsp;судах Перми исключительно по&nbsp;семейным спорам.
+                        p Имею большой опыт работы, участвовал во&nbsp;многих судебных процессах.
+                        p Знаю семейное законодательство, изучаю регулярно судебную практику: разъяснения Верховного суда&nbsp;РФ, отдельные судебные решения, читаю специализированные книги.
+                        p Я&nbsp;могу Вам помочь в&nbsp;решении любого вопроса в&nbsp;области семейного права в&nbsp;судебном порядке и&nbsp;возьму весь судебный процесс на&nbsp;себя: от&nbsp;составления иска до&nbsp;принятия судом решения.
+                        p Если у&nbsp;Вас возник семейный спор, не&nbsp;можете договориться о&nbsp;разделе имущества, не&nbsp;дают общаться с&nbsp;детьми, супруг/а не&nbsp;признает долг общим, и&nbsp;т.д., позвоните мне и&nbsp;я&nbsp;решу многие проблемы, так как специализируюсь только на&nbsp;семейных делах.
+
                 .accent-block
-                    p.accent-block__txt Опыт ежедневной работы более 12 лет
+                    .accent-block__txt
+                        | <strong>КОНСУЛЬТАЦИЯ ПО&nbsp;ТЕЛЕФОНУ БЕСПЛАТНО.</strong><br>
+                        | Позвоните сейчас по&nbsp;номеру <a href="tel:+79824460390">+7&nbsp;982&nbsp;446&nbsp;03&nbsp;90</a>&nbsp;и&nbsp;узнайте о&nbsp;перспективах решения вашего семейного спора.
 
-                section.service
-                    .service__row
-                        a.card.service__item(href="rastorzhenie-braka.html")
-                            .card__img
-                                img(src="img/rastirzheniye-braka.jpg")
-                            .card__body
-                                h2.card__title Расторжение брака
-                                ul.list
-                                    li если супруг(а) уклоняется от&nbsp;расторжения брака
-                                    li если есть несовершеннолетние дети
-                                    li если супруг(а) живет в&nbsp;другом городе
-                            .card__footer
-                                span.card__link Подробнее
-
-                        a.card.service__item(href="razdel-imushchestva.html")
-                            .card__img
-                                img(src="img/razdel.jpg")
-                            .card__body
-                                h2.card__title Раздел имущества
-                                ul.list
-                                    li раздел совместного имущества
-                                    li раздел долгов и кредитов
-                                    li раздел ипотеки
-                                    li выдел доли в квартире
-                            .card__footer
-                                .card__link Подробнее
-
-                        a.card.service__item(href="vzyskanie-alimentov.html")
-                            .card__img
-                                img(src="img/aliment.jpg")
-                            .card__body
-                                h2.card__title Взыскание алиментов
-                                ul.list
-                                    li в&nbsp;долях от&nbsp;заработной платы
-                                    li в&nbsp;твердой денежной сумме
-                                    li если отец (мать) не&nbsp;работает
-                                    li если нет дохода у&nbsp;родителя
-                                    li взыскание дополнителных расходов на&nbsp;содержание ребенка
-                            .card__footer
-                                .card__link Подробнее
-
-                        a.card.service__item(href="spory-o-detyah.html")
-                            .card__img
-                                img(src="img/child-quest.jpg")
-                            .card__body
-                                h2.card__title Споры о детях
-                                ul.list
-                                    li определение порядка общения с&nbsp;детьми
-                                    li определение места жительства ребенка
-                                    li общение с&nbsp;ребенком дедушки, бабушки и&nbsp;других родственников
-                            .card__footer
-                                .card__link Подробнее
-
-                        a.card.service__item(href="lishenie-roditelskih-prav.html")
-                            .card__img
-                                img(src="img/parent-pravo.jpg")
-                            .card__body
-                                h2.card__title Лишение родительских прав
-                                ul.list
-                                    li если родитель не&nbsp;платит алименты
-                                    li злоупотребляет своими правами
-                                    li не&nbsp;воспитывает ребенка и&nbsp;не&nbsp;дает согласие на&nbsp;усыновление
-                            .card__footer
-                                .card__link Подробнее
-
-                        a.card.service__item(href="ustanovlenie-i-osparivanie-otcovstva.html")
-                            .card__img
-                                img(src="img/father.jpg")
-                            .card__body
-                                h2.card__title Установление и&nbsp;оспаривание отцовства
-                                ul.list
-                                    li установление отцовства
-                                    li оспаривание отцовства
-                                    li отмена алиментов
-                                    li установление отцовства после смерти отца
-                            .card__footer
-                                .card__link Подробнее
-
-                        a.card.service__item(href="nasledstvennye-spory.html")
-                            .card__img
-                                img(src="img/nasledstvo.jpg")
-                            .card__body
-                                h2.card__title Наследственные дела
-                                ul.list
-                                    li вступление в&nbsp;наследство после пропуска срока
-                                    li оспаривание завещания
-                                    li иные споры, вытекающие из наследственных отношений
-                            .card__footer
-                                .card__link Подробнее
-
-                        a.card.service__item(href="zhilishchnye-spory.html")
-                            .card__img
-                                img(src="img/jilishnie-spori.jpg")
-                            .card__body
-                                h2.card__title Жилищные споры
-                                ul.list
-                                    li вселение в&nbsp;квартиру
-                                    li выселение из&nbsp;квартиры
-                                    li определение порядка пользования квартирой
-                                    li сопровождение сделок с&nbsp;недвижимостью
-                            .card__footer
-                                .card__link Подробнее
 
             aside.content__col.content__col_sm
-                include inc/articel-block
+                //include inc/articel-block
                 include inc/sub-menu
 
-                //.accent-block.accent-block_link.hide-tablet
-                //    a.accent-block__link(href="konsultacii.html") Консультации<br> Судебное представительство
 
-    section.content-wrap(id="price")
-        .container.container-flex
-            .content__col
-                .banner
-                    img.banner__img(src="img/konsultacii.jpg" alt="юридические консультации")
-                    .banner__info
-                        h3.banner__title 5 причин обратиться к нам:
-                        ul.banner__list
-                            li Опыт ежедневной работы по семейному праву
-                            li Оплата услуг в рассрочку
-                            li Узкая специализация – семейные споры
-                            li Доступная и фиксированная цена
-                            li Возможна консультация в вечернее время и выходные дни
+                .accent-block.accent-block_link.hide-tablet
+                    include inc/social-icons
 
-                .txt-block
-                    p Юридический центр &laquo;Право и&nbsp;семья&raquo; оказывает услуги по&nbsp;семейным делам:
-                    ul.list
-                        li Консультация
-                        li Составления исковых заявлений и&nbsp;других юридически значимых документов
-                        li Представительство в&nbsp;суде (возможен разовый выход)
-                        li Ведение дела с&nbsp;начала и&nbsp;до&nbsp;вынесения судом решения
-                        li Заочное ведение дела
-                        li Обжалование судебных решений
-                    p Поручив ведение семейного дела в&nbsp;суде юристам центра &laquo;Право и&nbsp;Семья&raquo;, Вы&nbsp;получаете ряд преимуществ:
-                    ul.num-list
-                        li Грамотная юридическая консультация
-                        li Составление иска и&nbsp;подготовка пакета документов в&nbsp;самые короткие сроки
-                        li Еженедельный отчет о&nbsp;проделанной работе
-                        li Максимальные шансы выиграть дело
-                        li Общение с&nbsp;ответчиком для Вас будет сведено к&nbsp;минимуму
-                    p Итогом нашей работы будет решение суда с&nbsp;максимально благоприятным для Вас результатом.
+    section.content-wrap(id="diplom")
+        .container
+            h3.content-wrap__title ДИПЛОМ ОБ&nbsp;ОБРАЗОВАНИИ
+            .gallery.card
+                a.gallery__item.js-open-img-popup(href="img/diplom-1.jpg")
+                    img(src="img/diplom-1.jpg", alt="diplom")
+                a.gallery__item.js-open-img-popup(href="img/diplom-2.jpg")
+                    img(src="img/diplom-2.jpg", alt="diplom")
+                a.gallery__item.js-open-img-popup(href="img/diplom-3.jpg")
+                    img(src="img/diplom-3.jpg", alt="diplom")
 
-                    .tag-block
-                        .tag-block__title Теги:
-                        .tag-block__container
-                            span.tag-block__item Семейный юрист,
-                            span.tag-block__item Семейный адвокат,
-                            span.tag-block__item Юридическая помощь,
-                            span.tag-block__item Судебное представительство,
-                            span.tag-block__item Консультация юриста
+    section.content-wrap(id="benefits")
+        .container
+            h3.content-wrap__title Преимущества работы со&nbsp;мной:
+            .benefits.card
+                .benefit-card
+                    img.benefit-card__icon(src='img/icon-check.svg' alt="check icon")
+                    .benefit-card__txt Глубокие знания семейного законодательства и&nbsp;его применения в&nbsp;практике
+                .benefit-card
+                    img.benefit-card__icon(src='img/icon-check.svg' alt="check icon")
+                    .benefit-card__txt Поэтапная оплата услуг: сумма делится на&nbsp;2&nbsp;&mdash; 3&nbsp;платежа
+                .benefit-card
+                    img.benefit-card__icon(src='img/icon-check.svg' alt="check icon")
+                    .benefit-card__txt Составление иска и&nbsp;подготовка пакета документов в&nbsp;самые короткие сроки
+                .benefit-card
+                    img.benefit-card__icon(src='img/icon-check.svg' alt="check icon")
+                    .benefit-card__txt Доступная и&nbsp;фиксированная цена услуг, закрепленная договором
+                .benefit-card
+                    img.benefit-card__icon(src='img/icon-check.svg' alt="check icon")
+                    .benefit-card__txt Выигрываю большинство дел или заканчиваю дело мировым соглашением
 
-                .accent-block
-                    .accent-block__txt Стоимость юридических услуг признается судебными расходами и
-                        | &nbsp;подлежит взысканию с&nbsp;проигравшей стороны
+    section.content-wrap(id="why")
+        .container
+            .txt-block
+                .txt-block__section
+                    h3.txt-block__title Почему важен юрист&nbsp;&mdash; специалист в&nbsp;семейном споре
+                    p.txt-block__text Разрыв отношений&nbsp;&mdash; это всегда трудный и&nbsp;болезненный процесс. Люди испытывают множество эмоций: душевную боль, чувство обиды, растерянность, что делает семейные споры специфичными. Супруги начинают ругаться, не&nbsp;уступая друг другу, что иногда приводит к&nbsp;оскорблениям и&nbsp;даже физическим столкновениям.
+                    p.txt-block__text При разводе люди порой ведут себя неподобающе: один из&nbsp;супругов начинает утверждать, что все нажитое имущество его и&nbsp;второй ничего не&nbsp;получит или получит минимум; склоняют к&nbsp;невыгодному заключению брачного договора, продают имущество, выводят денежные средства, специально берут кредиты и&nbsp;займы, что&nbsp;бы потом делить долг со&nbsp;вторым супругом; не&nbsp;дают общаться с&nbsp;детьми, платят минимальные алименты, меняют замки в&nbsp;квартире и&nbsp;т.д. Все это делается как с&nbsp;целью мести и&nbsp;унижения, так и&nbsp;с&nbsp;целью заполучить больше имущества в&nbsp;свою собственность.
+                    p.txt-block__text Возможно, что общее имущество было приобретено частично за&nbsp;счет Ваших личных средств, например от&nbsp;продажи добрачной или наследуемой квартиры, а&nbsp;второй супруг это отрицает, тем самым покушается на&nbsp;Вашу собственность.
+                    p.txt-block__text Из&nbsp;&mdash; за&nbsp;ошибки (незнания) можно потерять свое имущество.
+                    p.txt-block__text Если Вы&nbsp;хотите максимальный результат в&nbsp;разрешении семейного спора, то&nbsp;нужен юрист&nbsp;&mdash; специалист, который разбирается в&nbsp;конкретной теме, имеет практический опыт.
+                    p.txt-block__text В&nbsp;семейном праве множество своих нюансов и&nbsp;&laquo;подводных камней&raquo; и&nbsp;в&nbsp;каждой ситуации надо принимать адекватные меры.
 
-            aside.content__col.content__col_sm
-                .add-block
-                    .add-block__title  Стоимость услуг
-                    .add-block__price
-                        .add-block__price-row.add-block__price-row_name
-                            | Консультация в&nbsp;офисе (по&nbsp;предварительной записи)
-                        .add-block__price-row.add-block__price-row_cost
-                            | 500 ₽
-                        .add-block__price-row.add-block__price-row_name
-                            | Составление искового заявления
-                        .add-block__price-row.add-block__price-row_cost
-                            | от 1 500 ₽
-                        .add-block__price-row.add-block__price-row_name
-                            | Расторжение брака в&nbsp;суде
-                        .add-block__price-row.add-block__price-row_cost
-                            | от 5 000 ₽
-                        .add-block__price-row.add-block__price-row_name
-                            | Раздел имущества супругов
-                        .add-block__price-row.add-block__price-row_cost
-                            | от 10 000 ₽
-                        .add-block__price-row.add-block__price-row_name
-                            | Взыскание алиментов
-                        .add-block__price-row.add-block__price-row_cost
-                            | от 8 000 ₽
-                        .add-block__price-row.add-block__price-row_name
-                            | Определение места жительства ребенка с&nbsp;одним из&nbsp;родителей
-                        .add-block__price-row.add-block__price-row_cost
-                            | от 8 000 ₽
-                        .add-block__price-row.add-block__price-row_name
-                            | Определение порядка общения с&nbsp;ребенком
-                        .add-block__price-row.add-block__price-row_cost
-                            | от 8 000 ₽
-                        .add-block__price-row.add-block__price-row_name
-                            | Установление/Оспаривание отцовства
-                        .add-block__price-row.add-block__price-row_cost
-                            | от 12 000 ₽
-                        .add-block__price-row.add-block__price-row_name
-                            | Лишение родительских прав
-                        .add-block__price-row.add-block__price-row_cost
-                            | от 10 000 ₽
-                        .add-block__price-row.add-block__price-row_name
-                            | Снятие с&nbsp;регистрационного учета бывших членов семьи
-                        .add-block__price-row.add-block__price-row_cost
-                            | от 8 000 ₽
-                        .add-block__price-row.add-block__price-row_name
-                            | Определение порядка пользования жилым помещением
-                        .add-block__price-row.add-block__price-row_cost
-                            | от 10 000 ₽
-                        .add-block__price-row.add-block__price-row_name
-                            | Споры о&nbsp;наследстве
-                        .add-block__price-row.add-block__price-row_cost
-                            | от 10 000 ₽
-                        .add-block__price-row.add-block__price-row_name
-                            | Участие в&nbsp;суде апелляционной инстанции
-                        .add-block__price-row.add-block__price-row_cost
-                            | 5 000 ₽
-                        .add-block__price-row.add-block__price-row_name
-                            | Составление апелляционной или кассационной жалобы
-                        .add-block__price-row.add-block__price-row_cost
-                            | 5 000 ₽
-                    a.add-block__price-link(href="price.html") Посмотреть все цены
+            .accent-block
+                .accent-block__txt
+                    | Если у&nbsp;Вас намечается или уже идет семейный спор,
+                    | то&nbsp;позвоните мне по&nbsp;телефону <a href="tel:+79824460390">+7&nbsp;982&nbsp;446&nbsp;03&nbsp;90</a> и&nbsp;получите ответы на&nbsp;многие Ваши вопросы
 
+            .txt-block
+                .txt-block__section
+                    h3.txt-block__title Порядок взаимодействия для решения семейного спора
+                    p.txt-block__text
+                        strong Консультация по&nbsp;телефону (бесплатно).
+                        br
+                        | Обсудим Вашу ситуацию. Я&nbsp;предварительно обозначу направления решения проблемы, Вы&nbsp;будете понимать, как поступать и&nbsp;что делать дальше.
+                    p.txt-block__text
+                        strong Консультация в&nbsp;офисе.
+                        br
+                        | Если вопрос сложный, требует изучения документов, проведения опроса, то&nbsp;необходима личная консультация. Длительность консультации около 1&nbsp;часа.
+                        br
+                        | Гарантирую, что после консультации&nbsp;Вы будете иметь четкое представление о&nbsp;перспективах решения Вашего семейного спора.
+                    p.txt-block__text
+                        strong Судебное представительство.
+                        br
+                        | Если Ваше дело невозможно решить без суда, то&nbsp;мы&nbsp;заключим соглашение, где будет указана фиксированная сумма оплаты услуг, объем моей работы.
+                        br
+                        | Я&nbsp;составлю план действия по&nbsp;делу: какие исковые требования заявить, какие доказательства представить, кого вызвать свидетелем и&nbsp;т.д.
+                    p.txt-block__text
+                        strong Подготовка искового заявления.
+                        br
+                        | При подготовке иска я&nbsp;подберу нормы закона и&nbsp;судебную практику (Постановления Пленума и&nbsp;Определения Верховного Суда РФ, Обзоры судебных дел, решения по&nbsp;аналогичным делам и&nbsp;т.п.).
+                        br
+                        | Сформирую доказательную базу, составлю необходимые ходатайства, рассчитаю сумму государственной пошлины, определю подсудность дела.
+                        br
+                        | При необходимости можно наложить арест на&nbsp;имущество.
+                        br
+                        | После составления иска, сбора доказательств, направим заявление в&nbsp;суд.
+                    p.txt-block__text
+                        strong Участие в&nbsp;судебных заседаниях.
+                        br
+                        | Я&nbsp;присутствую на&nbsp;всех судебных заседаниях до&nbsp;вынесения судом решения. Могу принять участие в&nbsp;судебных заседаниях в&nbsp;Ваше отсутствие. Для этого достаточно выдать доверенность на&nbsp;ведение дела и&nbsp;не&nbsp;испытывать стресс от&nbsp;участия в&nbsp;суде.
+                        br
+                        | Все юридически значимые действия производятся с&nbsp;Вашего согласия и&nbsp;одобрения.
+
+            .accent-block
+                .accent-block__txt
+                    strong C&nbsp;уважением,
+                    br
+                    | Семейный юрист Шишигин В.Ю.
     include inc/contact-block.html

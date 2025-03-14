@@ -1,48 +1,63 @@
-.accent-block{
-    padding: 1rem;
-    margin: 20px 0;
-    border-top: 1px solid #582912;
-    border-bottom: 1px solid #582912;
-    position: relative;
+.accent-block {
+  padding: 1rem;
+  margin: 20px 0;
+  border-top: 1px solid #582912;
+  border-bottom: 1px solid #582912;
+  position: relative;
 
-    &:before{
-        position: absolute;
-        content: '';
-        background: #f0f0f0 url('../img/icon-quote.svg') no-repeat 50% 50%;
-        width: 40px;
-        height: 40px;
-        top: -20px;
-        left: calc(50% - 20px);
-        background-size: 21px 16px;
+  &:before {
+    position: absolute;
+    content: '';
+    background: #f0f0f0 url('../img/icon-quote.svg') no-repeat 50% 50%;
+    width: 40px;
+    height: 40px;
+    top: -20px;
+    left: calc(50% - 20px);
+    background-size: 21px 16px;
+  }
+
+  &__txt {
+    text-align: center;
+    color: #333;
+    line-height: 1.33;
+
+    @include fluid-type(font-size, 320px, 1200px, 14px, 22px);
+
+      & strong {
+          font-weight: 600;
+      }
+
+      & a {
+          color: #333;
+          text-decoration: none;
+          transition: color ease .4s;
+
+          &:hover {
+              color: #cb954f;
+          }
+      }
+  }
+
+  &__link {
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #582912;
+    display: block;
+    transition: color ease-out .33s;
+    line-height: 1.5;
+
+    &:hover {
+      color: #cb954f;
     }
+  }
 
-    &__txt{
-        text-align: center;
-        color: #333;
+  &_link {
+    padding: 1rem 0;
 
-        @include fluid-type(font-size, 320px, 1200px, 14px, 22px);
+    &:before {
+      background: #f0f0f0 url('../img/icon-link.svg') no-repeat 50% 50%;
+      background-size: 20px 20px;
     }
-
-    &__link{
-        text-align: center;
-        font-size: 1.2rem;
-        text-decoration: none;
-        color: #582912;
-        display: block;
-        transition: color ease-out .33s;
-        line-height: 1.5;
-
-        &:hover{
-            color: #cb954f;
-        }
-    }
-
-    &_link{
-        padding: 1rem 0;
-
-        &:before{
-            background: #f0f0f0 url('../img/icon-link.svg') no-repeat 50% 50%;
-            background-size: 20px 20px;
-        }
-    }
+  }
 }

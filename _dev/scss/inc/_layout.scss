@@ -2,57 +2,70 @@
  * Created by Pompo on 22.09.2017.
  */
 
-html, body{
+html, body {
   font-size: 16px;
 }
 
-body{
+body {
   font-family: 'PT Sans', Arial, sans-serif;
   color: #333;
   background-color: #f0f0f0;
 }
 
-a{
+a {
   outline: none !important;
 }
 
-img{
+img {
   max-width: 100%;
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
-.container{
+.container {
   max-width: 980px;
   margin: 0 auto;
   padding: 0 1em;
 }
 
-#page-wrap{
+#page-wrap {
   min-height: 100vh;
 }
 
-.content-wrap{
-  padding: 40px 0 0;
+.content-wrap {
+  padding: 4rem 0;
   border-bottom: 1px solid #cb954f;
-  
-  &_white{
+
+  @include respondTo(tablet) {
+    padding: 2.5rem 0;
+  }
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: .8em;
+    font-weight: 600;
+    color: #582912;
+
+    @include fluid-type(font-size, 320px, 1200px, 24px, 40px);
+  }
+
+  &_white {
     background: #fff;
   }
 
-  @include respondTo(mobile){
-    padding-top: 20px;
-  }
+  & .container {
 
-  & .container{
-
-    @include respondTo(small){
+    @include respondTo(small) {
       padding-left: 0;
       padding-right: 0;
     }

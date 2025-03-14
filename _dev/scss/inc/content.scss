@@ -1,11 +1,11 @@
 /**
  * Created by Pompo on 03.10.2017.
  */
-.content{
+.content {
   padding: 40px 0;
   position: relative;
 
-  &:before{
+  &:before {
     position: absolute;
     content: '';
     left: 0;
@@ -19,12 +19,12 @@
       width: 20%;
     }
 
-    @include respondTo(mobile){
+    @include respondTo(mobile) {
       display: none;
     }
   }
 
-  & .container{
+  & .container {
     display: flex;
     justify-content: space-between;
 
@@ -33,7 +33,7 @@
     }
   }
 
-  &__col{
+  &__col {
     width: 65%;
     position: relative;
     z-index: 10;
@@ -48,8 +48,8 @@
       padding-top: 0;
     }
 
-    &_sm{
-      width: 30%;
+    &_sm {
+      width: 32%;
       order: 1;
 
       @media screen and (max-width: 1180px){

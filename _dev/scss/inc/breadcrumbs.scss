@@ -1,0 +1,37 @@
+.breadcrumbs {
+  padding-bottom: 2rem;
+  display: flex;
+  gap: .5rem;
+  margin-top: -1.5rem;
+
+  @include respondTo(mobile) {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  &__item {
+    display: flex;
+    white-space: nowrap;
+    gap: .5rem;
+
+    &::before {
+      content: '/';
+    }
+
+    &:first-child {
+      &:before {
+        display: none;
+      }
+    }
+
+    & a {
+      color: #582912;
+      text-decoration: none;
+      transition: color ease .4s;
+
+      &:hover {
+        color: #cb954f;
+      }
+    }
+  }
+}

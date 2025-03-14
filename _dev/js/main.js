@@ -51,6 +51,24 @@ function magnificInit() {
             mainClass: 'my-mfp-zoom-in'
         });
     }
+
+    if($('.js-open-img-popup').length){
+        $('.js-open-img-popup').magnificPopup({
+            type: 'image',
+
+            fixedContentPos: false,
+            fixedBgPos: true,
+
+            overflowY: 'auto',
+
+            closeBtnInside: true,
+            preloader: false,
+
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-zoom-in'
+        });
+    }
     else return false;
 }
 

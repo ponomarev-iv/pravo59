@@ -1,26 +1,26 @@
 /**
  * Created by Pompo on 04.10.2017.
  */
-.contact{
+.contact {
   padding: 3em 0;
   position: relative;
   height: 500px;
   overflow: hidden;
 
-  @include respondTo(mobile){
-    padding-top: 1em;
-    height: 800px;
+  @include respondTo(mobile) {
+    padding-top: 0;
+    height: 640px;
   }
 
-  & .container{
+  & .container {
 
-      @include respondTo(small){
-        padding-left: 0;
-        padding-right: 0;
-      }
+    @include respondTo(small) {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
-  &__map{
+  &__map {
     width: 100%;
     position: absolute;
     top: 0;
@@ -29,13 +29,13 @@
     bottom: 0;
     z-index: 1;
 
-    @include respondTo(mobile){
-      top: 340px;
+    @include respondTo(mobile) {
+      top: 140px;
     }
 
   }
 
-  &__info{
+  &__info {
     width: 43%;
     position: relative;
     z-index: 10;
@@ -44,19 +44,19 @@
     box-sizing: border-box;
     border-radius: 12px;
 
-    @include respondTo(tablet){
+    @include respondTo(tablet) {
       padding: 1rem;
       width: 50%;
     }
 
-    @include respondTo(mobile){
+    @include respondTo(mobile) {
       width: 100%;
       border-radius: 0;
-      box-shadow: 0 2px 0 rgba(0,0,0,.2);
+      box-shadow: 0 2px 0 rgba(0, 0, 0, .2);
     }
   }
 
-  &__title{
+  &__title {
     font-weight: 700;
     font-size: 1.2em;
     margin-bottom: 1em;
@@ -65,21 +65,21 @@
     @include fluid-type(font-size, 320px, 1200px, 16px, 20px);
   }
 
-  &__data-row{
+  &__data-row {
     margin-bottom: 1em;
     //font-size: 1.05em;
     line-height: 1.25;
 
     @include fluid-type(font-size, 320px, 1200px, 14px, 17px);
 
-    &:after{
+    &:after {
       content: '';
       clear: both;
       display: table;
     }
   }
 
-  &__data-info{
+  &__data-info {
     float: left;
     width: 25%;
     font-weight: 700;
@@ -89,20 +89,20 @@
     @include fluid-type(font-size, 320px, 1200px, 14px, 16px);
   }
 
-  &__data-txt{
+  &__data-txt {
     float: left;
     width: 70%;
     margin-left: 5%;
     font-size: 1em;
 
-    & a{
+    & a {
       text-decoration: none;
       color: #cb954f;
     }
 
   }
 
-  & .button{
+  & .button {
     max-width: none;
   }
 }
