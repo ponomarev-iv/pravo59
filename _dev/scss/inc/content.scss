@@ -62,5 +62,12 @@
         width: 100%;
       }
     }
+
+    &_order-0 {
+
+      @include respondTo(mobile) {
+        order: 0;
+      }
+    }
   }
 }

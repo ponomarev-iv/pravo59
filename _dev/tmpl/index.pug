@@ -7,8 +7,6 @@ block title
 block content
 
     section(class="content-wrap")
-
-
         .container.container-flex
             .personal.card
                 .personal__photo
@@ -20,8 +18,9 @@ block content
                         li <strong>2003&nbsp;г. &mdash;&nbsp;2004&nbsp;г.</strong> &mdash;&nbsp;Следователь прокуратуры
                         li <strong>2005&nbsp;г. &mdash;&nbsp;2007&nbsp;г.</strong> &mdash;&nbsp;Адвокат (уголовные и&nbsp;гражданские дела)
                         li <strong>2007&nbsp;г. &mdash;&nbsp;н.в.</strong> &mdash;&nbsp;Юрист по&nbsp;семейным делам (судебное ведение дел, консультации)
+
         .container.container-flex
-            .content__col
+            .content__col.content__col_order-0
                 .txt-block
                     .txt-block__section
                         h2.txt-block__title УСЛУГИ
@@ -45,21 +44,37 @@ block content
                         p Я&nbsp;могу Вам помочь в&nbsp;решении любого вопроса в&nbsp;области семейного права в&nbsp;судебном порядке и&nbsp;возьму весь судебный процесс на&nbsp;себя: от&nbsp;составления иска до&nbsp;принятия судом решения.
                         p Если у&nbsp;Вас возник семейный спор, не&nbsp;можете договориться о&nbsp;разделе имущества, не&nbsp;дают общаться с&nbsp;детьми, супруг/а не&nbsp;признает долг общим, и&nbsp;т.д., позвоните мне и&nbsp;я&nbsp;решу многие проблемы, так как специализируюсь только на&nbsp;семейных делах.
 
+                    .txt-block__section
+                        h3.txt-block__title Преимущества работы со&nbsp;мной:
+                        ul.benefits-list
+                            li Глубокие знания семейного законодательства и&nbsp;его применения в&nbsp;практике
+                            li Поэтапная оплата услуг: сумма делится на&nbsp;2&nbsp;&mdash; 3&nbsp;платежа
+                            li Составление иска и&nbsp;подготовка пакета документов в&nbsp;самые короткие сроки
+                            li Доступная и&nbsp;фиксированная цена услуг, закрепленная договором
+                            li Выигрываю большинство дел или заканчиваю дело мировым соглашением
+
                 .accent-block
                     .accent-block__txt
                         | <strong>КОНСУЛЬТАЦИЯ ПО&nbsp;ТЕЛЕФОНУ БЕСПЛАТНО.</strong><br>
                         | Позвоните сейчас по&nbsp;номеру <a href="tel:+79824460390">+7&nbsp;982&nbsp;446&nbsp;03&nbsp;90</a>&nbsp;и&nbsp;узнайте о&nbsp;перспективах решения вашего семейного спора.
 
-
+            section.content-wrap.d-none.d-sm-block(id="diplom-mbl")
+                .container
+                    h3.content-wrap__title ДИПЛОМ ОБ&nbsp;ОБРАЗОВАНИИ
+                    .gallery.card
+                        a.gallery__item.js-open-img-popup(href="img/diplom-1.jpg")
+                            img(src="img/diplom-1.jpg", alt="diplom")
+                        a.gallery__item.js-open-img-popup(href="img/diplom-2.jpg")
+                            img(src="img/diplom-2.jpg", alt="diplom")
+                        a.gallery__item.js-open-img-popup(href="img/diplom-3.jpg")
+                            img(src="img/diplom-3.jpg", alt="diplom")
             aside.content__col.content__col_sm
-                //include inc/articel-block
                 include inc/sub-menu
-
 
                 .accent-block.accent-block_link.hide-tablet
                     include inc/social-icons
 
-    section.content-wrap(id="diplom")
+    section.content-wrap.d-sm-none(id="diplom")
         .container
             h3.content-wrap__title ДИПЛОМ ОБ&nbsp;ОБРАЗОВАНИИ
             .gallery.card
@@ -69,26 +84,6 @@ block content
                     img(src="img/diplom-2.jpg", alt="diplom")
                 a.gallery__item.js-open-img-popup(href="img/diplom-3.jpg")
                     img(src="img/diplom-3.jpg", alt="diplom")
-
-    section.content-wrap(id="benefits")
-        .container
-            h3.content-wrap__title Преимущества работы со&nbsp;мной:
-            .benefits.card
-                .benefit-card
-                    img.benefit-card__icon(src='img/icon-check.svg' alt="check icon")
-                    .benefit-card__txt Глубокие знания семейного законодательства и&nbsp;его применения в&nbsp;практике
-                .benefit-card
-                    img.benefit-card__icon(src='img/icon-check.svg' alt="check icon")
-                    .benefit-card__txt Поэтапная оплата услуг: сумма делится на&nbsp;2&nbsp;&mdash; 3&nbsp;платежа
-                .benefit-card
-                    img.benefit-card__icon(src='img/icon-check.svg' alt="check icon")
-                    .benefit-card__txt Составление иска и&nbsp;подготовка пакета документов в&nbsp;самые короткие сроки
-                .benefit-card
-                    img.benefit-card__icon(src='img/icon-check.svg' alt="check icon")
-                    .benefit-card__txt Доступная и&nbsp;фиксированная цена услуг, закрепленная договором
-                .benefit-card
-                    img.benefit-card__icon(src='img/icon-check.svg' alt="check icon")
-                    .benefit-card__txt Выигрываю большинство дел или заканчиваю дело мировым соглашением
 
     section.content-wrap(id="why")
         .container
@@ -148,4 +143,5 @@ block content
                     strong C&nbsp;уважением,
                     br
                     | Семейный юрист Шишигин В.Ю.
+
     include inc/contact-block.html

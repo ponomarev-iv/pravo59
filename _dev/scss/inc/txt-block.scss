@@ -26,16 +26,20 @@
   &__section {
     &:not(:first-child) {
       padding-top: 2.5rem;
+
+      @include respondTo(tablet) {
+        padding-top: 1.5rem;
+      }
     }
   }
 
   &__title {
+    text-transform: uppercase;
     font-weight: 600;
     font-size: 2rem;
     line-height: 1.33;
     margin-bottom: .5em;
     color: #cb954f;
-
   }
 
   & h3.txt-block__title {
@@ -45,6 +49,8 @@
   &__text {
     font-size: 1.125rem;
     line-height: 1.33;
+
+    @include fluid-type(font-size, 320px, 1200px, 16px, 18px);
 
     & strong {
       font-weight: 600;
@@ -65,8 +71,10 @@
       font-size: 1.125rem;
       font-weight: 600;
 
+      @include fluid-type(font-size, 320px, 1200px, 16px, 18px);
+
       &:not(:last-child) {
-        margin-bottom: .5em;
+        margin-bottom: .35em;
       }
     }
   }

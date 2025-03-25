@@ -21,19 +21,19 @@
     color: #333;
     line-height: 1.33;
 
-    @include fluid-type(font-size, 320px, 1200px, 14px, 22px);
+    @include fluid-type(font-size, 320px, 1200px, 16px, 22px);
 
       & strong {
           font-weight: 600;
       }
 
       & a {
-          color: #333;
+          color: #cb954f;
           text-decoration: none;
           transition: color ease .4s;
 
           &:hover {
-              color: #cb954f;
+              text-decoration: underline;
           }
       }
   }

@@ -64,7 +64,7 @@
       padding-left: 1em;
       position: relative;
 
-      @include fluid-type(font-size, 320px, 1200px, 14px, 18px);
+      @include fluid-type(font-size, 320px, 1200px, 16px, 18px);
 
       &:not(:last-child) {
         margin-bottom: .75em;

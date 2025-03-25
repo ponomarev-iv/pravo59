@@ -46,6 +46,12 @@ h1, h2, h3, h4, h5, h6 {
     padding: 2.5rem 0;
   }
 
+  &:first-child {
+    @include respondTo(tablet) {
+      padding-top: 0;
+    }
+  }
+
   &:last-child {
     border-bottom: 0;
   }
@@ -69,5 +75,21 @@ h1, h2, h3, h4, h5, h6 {
       padding-left: 0;
       padding-right: 0;
     }
+  }
+}
+
+.d-none {
+  display: none !important;
+}
+
+.d-sm-none {
+  @include respondTo(mobile) {
+    display: none !important;
+  }
+}
+
+.d-sm-block {
+  @include respondTo(mobile) {
+    display: block !important;
   }
 }
